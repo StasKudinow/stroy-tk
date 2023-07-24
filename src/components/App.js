@@ -1,9 +1,13 @@
+import Logo from './Logo'
+import Header from './Header'
+
 function App() {
   return (
     <div className="page">
-      <h1 className="hello-world">Hello, world!</h1>
+      <Logo />
+      <Header />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

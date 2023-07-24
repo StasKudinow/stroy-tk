@@ -1,0 +1,6 @@
+.header__call-button-image {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../images/phone-icon.svg);
+  background-size: cover;
+}

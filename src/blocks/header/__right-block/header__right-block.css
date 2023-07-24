@@ -1,0 +1,6 @@
+.header__right-block {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}

@@ -3,17 +3,12 @@
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
+  background-color: #000000;
+  position: relative;
   font-family: "OpenSans", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
-  background-color: #000000;
-}
-
-.hello-world {
-  margin: 0;
-  font-weight: 300;
-  color: aliceblue;
 }

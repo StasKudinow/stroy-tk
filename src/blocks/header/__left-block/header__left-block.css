@@ -1,0 +1,6 @@
+.header__left-block {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}

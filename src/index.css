@@ -1,3 +1,15 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
 @import url(./blocks/page/page.css);
+@import url(./blocks/logo/logo.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__container/header__container.css);
+@import url(./blocks/header/__content/header__content.css);
+@import url(./blocks/header/__left-block/header__left-block.css);
+@import url(./blocks/header/__burger-menu/header__burger-menu.css);
+@import url(./blocks/header/__number/header__number.css);
+@import url(./blocks/header/__right-block/header__right-block.css);
+@import url(./blocks/header/__call-text/header__call-text.css);
+@import url(./blocks/header/__call-button/header__call-button.css);
+@import url(./blocks/header/__call-button-circle/header__call-button-circle.css);
+@import url(./blocks/header/__call-button-image/header__call-button-image.css);
