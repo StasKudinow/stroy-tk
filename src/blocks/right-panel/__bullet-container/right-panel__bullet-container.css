@@ -1,0 +1,6 @@
+.right-panel__bullet-container {
+  height: 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

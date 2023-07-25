@@ -1,0 +1,12 @@
+.right-panel__bullet-cirlce {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.right-panel__bullet-cirlce_active {
+  background-color: #FFAC30;
+}

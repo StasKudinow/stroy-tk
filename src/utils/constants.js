@@ -16,3 +16,11 @@ export const socials = [
     href: 'https://www.youtube.com'
   },
 ]
+
+export const bullets = [
+  { id: 1 },
+  { id: 2 },
+  { id: 3 },
+  { id: 4 },
+  { id: 5 },
+]

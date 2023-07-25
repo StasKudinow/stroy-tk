@@ -1,6 +1,7 @@
 import Logo from './Logo'
 import Header from './Header'
 import LeftPanel from './LeftPanel'
+import RightPanel from './RightPanel'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <div className="fixed-panels">
         <LeftPanel />
+        <RightPanel />
       </div>
     </div>
   )

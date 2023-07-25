@@ -16,3 +16,9 @@
 @import url(./blocks/fixed-panels/fixed-panels.css);
 @import url(./blocks/left-panel/left-panel.css);
 @import url(./blocks/left-panel/__line/left-panel__line.css);
+@import url(./blocks/left-panel/__icon-container/left-panel__icon-container.css);
+@import url(./blocks/left-panel/__icon/left-panel__icon.css);
+@import url(./blocks/right-panel/right-panel.css);
+@import url(./blocks/right-panel/__bullet-container/right-panel__bullet-container.css);
+@import url(./blocks/right-panel/__bullet/right-panel__bullet.css);
+@import url(./blocks/right-panel/__bullet-cirlce/right-panel__bullet-cirlce.css);

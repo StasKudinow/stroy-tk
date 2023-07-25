@@ -1,0 +1,6 @@
+.left-panel__icon-container {
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
