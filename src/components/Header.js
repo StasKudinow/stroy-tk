@@ -1,6 +1,6 @@
 function Header() {
 
-  return(
+  return (
     <header className="header">
       <div className="header__container">
         <div className="header__content">
