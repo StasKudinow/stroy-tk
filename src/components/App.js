@@ -3,6 +3,7 @@ import Header from './Header'
 import LeftPanel from './LeftPanel'
 import RightPanel from './RightPanel'
 import Promo from './Promo'
+import Professionals from './Professionals'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <RightPanel />
       </div>
       <Promo />
+      <Professionals />
     </div>
   )
 }
