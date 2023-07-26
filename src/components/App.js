@@ -2,6 +2,7 @@ import Logo from './Logo'
 import Header from './Header'
 import LeftPanel from './LeftPanel'
 import RightPanel from './RightPanel'
+import Promo from './Promo'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <LeftPanel />
         <RightPanel />
       </div>
+      <Promo />
     </div>
   )
 }

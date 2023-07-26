@@ -22,3 +22,6 @@
 @import url(./blocks/right-panel/__bullet-container/right-panel__bullet-container.css);
 @import url(./blocks/right-panel/__bullet/right-panel__bullet.css);
 @import url(./blocks/right-panel/__bullet-cirlce/right-panel__bullet-cirlce.css);
+@import url(./blocks/promo/promo.css);
+@import url(./blocks/promo/__slogan-wrapper/promo__slogan-wrapper.css);
+@import url(./blocks/promo/__slogan/promo__slogan.css);
