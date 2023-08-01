@@ -1,0 +1,5 @@
+.professionals__line {
+  width: 2px;
+  height: 250px;
+  background-image: url(../../../images/professionals-line.svg);
+}

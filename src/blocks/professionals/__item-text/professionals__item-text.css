@@ -1,0 +1,10 @@
+.professionals__item-text {
+  max-width: 335px;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}

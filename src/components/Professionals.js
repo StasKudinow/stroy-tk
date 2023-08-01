@@ -20,6 +20,9 @@ function Professionals() {
             <p className="professionals__item-text">сотрудников</p>
           </div>
         </div>
+        <button className="professionals__button" type="button">
+          подробнее о нас
+        </button>
       </div>
     </section>
   )
