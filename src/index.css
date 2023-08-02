@@ -20,8 +20,11 @@
 @import url(./blocks/left-panel/__icon/left-panel__icon.css);
 @import url(./blocks/right-panel/right-panel.css);
 @import url(./blocks/right-panel/__bullet-container/right-panel__bullet-container.css);
+@import url(./blocks/right-panel/__bullet-wrapper/right-panel__bullet-wrapper.css);
 @import url(./blocks/right-panel/__bullet/right-panel__bullet.css);
+@import url(./blocks/right-panel/__bullet-active/right-panel__bullet-active.css);
 @import url(./blocks/right-panel/__bullet-cirlce/right-panel__bullet-cirlce.css);
+@import url(./blocks/right-panel/__bullet-cirlce-active/right-panel__bullet-cirlce-active.css);
 @import url(./blocks/promo/promo.css);
 @import url(./blocks/promo/__slogan-wrapper/promo__slogan-wrapper.css);
 @import url(./blocks/promo/__slogan/promo__slogan.css);

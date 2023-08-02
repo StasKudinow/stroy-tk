@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Element } from 'react-scroll'
 
 import Logo from './Logo'
 import Header from './Header'
@@ -39,9 +40,15 @@ function App() {
         />
         <RightPanel />
       </div>
-      <Promo />
-      <Professionals />
-      <About />
+      <Element name="promo">
+        <Promo />
+      </Element>
+      <Element name="professionals">
+        <Professionals />
+      </Element>
+      <Element name="about">
+        <About />
+      </Element>
     </main>
   )
 }

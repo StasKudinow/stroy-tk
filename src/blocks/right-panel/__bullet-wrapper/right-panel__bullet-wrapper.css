@@ -1,0 +1,9 @@
+.right-panel__bullet-wrapper {
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+.right-panel__bullet-wrapper:hover .right-panel__bullet-cirlce {
+  background-color: #FFAC30;
+}

@@ -18,11 +18,11 @@ export const socials = [
 ]
 
 export const bullets = [
-  { id: 1 },
-  { id: 2 },
-  { id: 3 },
-  { id: 4 },
-  { id: 5 },
+  { id: 1, href: 'promo' },
+  { id: 2, href: 'professionals' },
+  { id: 3, href: 'about' },
+  { id: 4, href: '' },
+  { id: 5, href: '' },
 ]
 
 export const aboutCards = [
