@@ -1,5 +1,6 @@
 .right-panel__bullet-container {
   height: 165px;
+  padding-right: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

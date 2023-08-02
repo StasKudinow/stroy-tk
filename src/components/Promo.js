@@ -1,16 +1,22 @@
-import { Animated } from "react-animated-css"
+import { Animated } from 'react-animated-css'
 
 function Promo() {
 
+  const pointerEvents = {
+    pointerEvents: 'none',
+  }
+
   return (
     <section className="promo">
-      <Animated
-        animationIn="fadeInDown" isVisible={true}
-      >
       <div className="promo__slogan-wrapper">
-        <div className="promo__slogan" />
+        <Animated
+          animationIn="fadeInDown"
+          isVisible={true}
+          style={pointerEvents}
+        >
+          <div className="promo__slogan" />
+        </Animated>
       </div>
-      </Animated>
     </section>
   )
 }
