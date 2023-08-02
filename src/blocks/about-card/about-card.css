@@ -1,0 +1,15 @@
+.about-card {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.about-card:hover {
+  cursor: pointer;
+}
+
+.about-card:hover .about-card__text {
+  color: #FFAC30;
+}

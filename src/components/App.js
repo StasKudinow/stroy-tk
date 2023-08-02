@@ -6,6 +6,7 @@ import LeftPanel from './LeftPanel'
 import RightPanel from './RightPanel'
 import Promo from './Promo'
 import Professionals from './Professionals'
+import About from './About'
 
 function App() {
 
@@ -27,7 +28,7 @@ function App() {
   }, [])
 
   return (
-    <div className="page">
+    <main className="page">
       <Logo />
       <Header
         showAnimate={showAnimate}
@@ -40,7 +41,8 @@ function App() {
       </div>
       <Promo />
       <Professionals />
-    </div>
+      <About />
+    </main>
   )
 }
 
