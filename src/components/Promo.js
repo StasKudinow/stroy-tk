@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-function Promo({ showAnimate }) {
+function Promo() {
 
   const sloganVariant = {
     hidden: {
@@ -21,13 +21,13 @@ function Promo({ showAnimate }) {
     <motion.section
       initial="hidden"
       whileInView="visible"
-      viewport={{ amount: 0.2 }}
+      viewport={{ amount: 0.6 }}
       className="promo"
     >
       <div className="promo__slogan-wrapper">
         <motion.div
-          className="promo__slogan"
           variants={sloganVariant}
+          className="promo__slogan"
         />
       </div>
     </motion.section>

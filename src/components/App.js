@@ -36,15 +36,13 @@ function App() {
   return (
     <main className="page">
       <Logo />
-      <Header
-        showAnimate={showAnimate} />
+      <Header showAnimate={showAnimate} />
       <div className="fixed-panels">
-        <LeftPanel
-          showAnimate={showAnimate} />
+        <LeftPanel showAnimate={showAnimate} />
         <RightPanel />
       </div>
       <Element name="promo">
-        <Promo showAnimate={showAnimate} />
+        <Promo />
       </Element>
       <Element name="professionals">
         <Professionals />
