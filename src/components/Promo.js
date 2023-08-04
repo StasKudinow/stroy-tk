@@ -1,23 +1,36 @@
-import { Animated } from 'react-animated-css'
+import { motion } from 'framer-motion'
 
-function Promo() {
+function Promo({ showAnimate }) {
 
-  const pointerEvents = {
-    pointerEvents: 'none',
+  const sloganVariant = {
+    hidden: {
+      x: -200,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        delay: 0.2
+      }
+    }
   }
 
   return (
-    <section className="promo">
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.2 }}
+      className="promo"
+    >
       <div className="promo__slogan-wrapper">
-        <Animated
-          animationIn="fadeInDown"
-          isVisible={true}
-          style={pointerEvents}
-        >
-          <div className="promo__slogan" />
-        </Animated>
+        <motion.div
+          className="promo__slogan"
+          variants={sloganVariant}
+        />
       </div>
-    </section>
+    </motion.section>
   )
 }
 

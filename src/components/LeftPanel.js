@@ -1,39 +1,51 @@
-import { Animated } from 'react-animated-css'
+import { motion, AnimatePresence } from 'framer-motion'
 
 import SocialIcon from './SocialIcon'
 import { socials } from '../utils/constants'
 
 function LeftPanel({ showAnimate }) {
 
+  const leftPanelVariant = {
+    hidden: {
+      x: -100,
+    },
+    visible: {
+      x: 0,
+      transition: {
+        duration: 0.3
+      }
+    },
+    closed: {
+      x: -100,
+      transition: {
+        duration: 0.3
+      }
+    }
+  }
+
   return (
-    <div className="left-panel">
-      <Animated
-        animationIn="fadeIn"
-        animationOut="fadeOut"
-        animationInDuration={300}
-        animationOutDuration={300}
-        isVisible={showAnimate}
-      >
-        <hr className="left-panel__line" />
-      </Animated>
-      <Animated
-        animationIn="slideInLeft"
-        animationOut="slideOutLeft"
-        animationInDuration={300}
-        animationOutDuration={300}
-        isVisible={showAnimate}
-      >
-        <div className="left-panel__icon-container">
-          {socials.map((social) => {
-            return <SocialIcon
-              key={social.name}
-              name={social.name}
-              href={social.href}
-            />
-          })}
-        </div>
-      </Animated>
-    </div>
+    <AnimatePresence>
+      {showAnimate &&
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          exit="closed"
+          variants={leftPanelVariant}
+          className="left-panel"
+        >
+          <hr className="left-panel__line" />
+          <div className="left-panel__icon-container">
+            {socials.map((social) => {
+              return <SocialIcon
+                key={social.name}
+                name={social.name}
+                href={social.href}
+              />
+            })}
+          </div>
+        </motion.div>
+      }
+    </AnimatePresence>
   )
 }
 

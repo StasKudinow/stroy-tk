@@ -12,13 +12,18 @@ import About from './About'
 function App() {
 
   const [showAnimate, setShowAnimate] = useState(true)
+  const [lastScrollY, setLastScrpllY] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowAnimate(false)
-      setTimeout(() => {
-        setShowAnimate(true)
-      }, 1500)
+      if (typeof window !== 'undefined') {
+        if (window.scrollY > lastScrollY) {
+          setShowAnimate(false)
+        } else {
+          setShowAnimate(true)
+        }
+        setLastScrpllY(window.scrollY)
+      }
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -26,22 +31,20 @@ function App() {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, [lastScrollY])
 
   return (
     <main className="page">
       <Logo />
       <Header
-        showAnimate={showAnimate}
-      />
+        showAnimate={showAnimate} />
       <div className="fixed-panels">
         <LeftPanel
-          showAnimate={showAnimate}
-        />
+          showAnimate={showAnimate} />
         <RightPanel />
       </div>
       <Element name="promo">
-        <Promo />
+        <Promo showAnimate={showAnimate} />
       </Element>
       <Element name="professionals">
         <Professionals />
