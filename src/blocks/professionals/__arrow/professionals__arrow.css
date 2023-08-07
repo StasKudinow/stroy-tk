@@ -1,0 +1,8 @@
+.professionals__arrow {
+  width: 115px;
+  height: 20px;
+  background-image: url(../../../images/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}

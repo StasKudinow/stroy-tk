@@ -32,6 +32,21 @@ function Professionals() {
     })
   }
 
+  const btnVariant = {
+    hidden: {
+      x: -80,
+      opacity: 0,
+    },
+    visible: custom => ({
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        delay: custom * 0.2
+      }
+    })
+  }
+
   return (
     <motion.section
       initial="hidden"
@@ -94,7 +109,17 @@ function Professionals() {
           </div>
         </div>
         <button className="professionals__button" type="button">
-          подробнее о нас
+          <motion.p
+            variants={btnVariant}
+            custom={5}
+          >
+            подробнее о нас
+          </motion.p>
+          <motion.div
+            variants={btnVariant}
+            custom={4}
+            className="professionals__arrow"
+          />
         </button>
       </div>
     </motion.section>

@@ -1,9 +1,13 @@
 .professionals__button {
+  width: 345px;
+  margin-top: 100px;
   padding: 0;
-  margin: 200px 0 0;
-  align-self: flex-start;
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  justify-content: space-between;
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
@@ -17,4 +21,8 @@
 .professionals__button:hover {
   cursor: pointer;
   color: #FFAC30;
+}
+
+.professionals__button:hover .professionals__arrow {
+  background-image: url(../../../images/arrow-gold.svg);
 }

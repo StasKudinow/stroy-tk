@@ -24,11 +24,13 @@ function Promo() {
       viewport={{ amount: 0.6 }}
       className="promo"
     >
-      <div className="promo__slogan-wrapper">
-        <motion.div
-          variants={sloganVariant}
-          className="promo__slogan"
-        />
+      <div className="promo__wrapper">
+        <div className="promo__slogan-wrapper">
+          <motion.div
+            variants={sloganVariant}
+            className="promo__slogan"
+          />
+        </div>
       </div>
     </motion.section>
   )
