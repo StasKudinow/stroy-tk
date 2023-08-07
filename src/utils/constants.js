@@ -28,22 +28,27 @@ export const bullets = [
 export const aboutCards = [
   {
     id: 1,
-    text: 'Собственное производство электрощитового оборудования',
+    title: 'Собственное производство электрощитового оборудования',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
   },
   {
     id: 2,
-    text: 'Строительство и проектирование кабельных систем',
+    title: 'Строительство и проектирование кабельных систем',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
   },
   {
     id: 3,
-    text: 'Электролаборатория',
+    title: 'Электролаборатория',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
   },
   {
     id: 4,
-    text: 'Обслуживание инжинерных систем',
+    title: 'Обслуживание инжинерных систем',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
   },
   {
     id: 5,
-    text: 'Проектирование и монтаж электросетей',
+    title: 'Проектирование и монтаж электросетей',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
   },
 ]

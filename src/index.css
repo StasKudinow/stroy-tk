@@ -26,6 +26,7 @@
 @import url(./blocks/right-panel/__bullet-cirlce/right-panel__bullet-cirlce.css);
 @import url(./blocks/right-panel/__bullet-cirlce-active/right-panel__bullet-cirlce-active.css);
 @import url(./blocks/promo/promo.css);
+@import url(./blocks/promo/__wrapper/promo__wrapper.css);
 @import url(./blocks/promo/__slogan-wrapper/promo__slogan-wrapper.css);
 @import url(./blocks/promo/__slogan/promo__slogan.css);
 @import url(./blocks/professionals/professionals.css);
@@ -41,5 +42,5 @@
 @import url(./blocks/about/about.css);
 @import url(./blocks/about/__container/about__container.css);
 @import url(./blocks/about-card/about-card.css);
-@import url(./blocks/about-card/__text-wrapper/about-card__text-wrapper.css);
-@import url(./blocks/about-card/__text/about-card__text.css);
+@import url(./blocks/about-card/__wrapper/about-card__wrapper.css);
+@import url(./blocks/about-card/__title/about-card__title.css);

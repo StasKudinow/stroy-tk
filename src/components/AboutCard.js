@@ -1,14 +1,30 @@
-function AboutCard({ src, text }) {
+function AboutCard({
+  src,
+  title,
+  text,
+  onClickCard,
+  activeCard,
+  cardClassName,
+  cardWrapperClassName,
+  cardTitleClassName,
+  cardTextClassName,
+  cardButtonClassName
+}) {
+
+  console.log(activeCard)
 
   return (
     <div
-      className="about-card"
+      className={cardClassName}
       style={{
         backgroundImage: `url(${require(`../images/about-image-${src}.png`)})`
       }}
     >
-      <div className="about-card__text-wrapper">
-        <p className="about-card__text">{text}</p>
+      <div className={cardWrapperClassName}>
+        <h2 className={cardTitleClassName} onClick={onClickCard}>{title}</h2>
+        <p className={cardTextClassName}>{text}</p>
+        <button className={cardButtonClassName}>галерея</button>
+        <button className={cardButtonClassName}>asha'xzgf</button>
       </div>
     </div>
   )
