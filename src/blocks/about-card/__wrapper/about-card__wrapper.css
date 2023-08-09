@@ -1,4 +1,4 @@
-.about-card__wrapper {
+.about-card__overlay {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
@@ -8,6 +8,6 @@
   justify-content: center;
 }
 
-.about-card__wrapper_active {
+.about-card__overlay_active {
   justify-content: flex-start;
 }
