@@ -1,0 +1,8 @@
+.about-card__line {
+  width: 2px;
+  height: 100vh;
+  background-image: url(../../../images/about-line.svg);
+  position: absolute;
+  top: 0;
+  right: 0;
+}

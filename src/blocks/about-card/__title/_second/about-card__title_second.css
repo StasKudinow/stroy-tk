@@ -1,0 +1,9 @@
+.about-card__title_second {
+  width: 550px;
+  margin: 120px 0 190px 0;
+  color: #FFAC30;
+}
+
+.about-card__title_second:hover {
+  cursor: default;
+}

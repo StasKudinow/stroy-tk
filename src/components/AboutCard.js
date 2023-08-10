@@ -6,9 +6,10 @@ function AboutCard({
   title,
   text,
   onClickCard,
+  onClose,
   isActiveCard,
   cardClassName,
-  cardWrapperClassName,
+  cardOverlayClassName,
 }) {
 
   const variants = {
@@ -33,12 +34,12 @@ function AboutCard({
 
   return (
     <div
-      className={cardClassName}
+      className="about-card"
       style={{
       backgroundImage: `url(${require(`../images/about-image-${src}.png`)})`
       }}
     >
-      <div className={cardWrapperClassName}>
+      <div className="about-card__overlay">
         <AnimatePresence>
           {isActiveCard === card ?
             <motion.div
@@ -55,14 +56,15 @@ function AboutCard({
                 {title}
               </h2>
               <p className="about-card__text">{text}</p>
-              <button className="about-card__button">
+              <button className="about-card__button" type="button">
                 галерея
                 <div className="about-card__button-arrow" />
               </button>
-              <button className="about-card__button" style={{fontSize: "12px"}}>
+              <button className="about-card__button" type="button" style={{fontSize: "12px"}}>
                 список услуг
                 <div className="about-card__button-arrow about-card__button-arrow" />
               </button>
+              <button className="about-card__close-button" type="button" onClick={onClose} />
               </motion.div>
               :
               <motion.h2
@@ -78,6 +80,7 @@ function AboutCard({
             }
           </AnimatePresence>
       </div>
+      <div className="about-card__line" />
     </div>
   )
 }

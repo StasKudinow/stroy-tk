@@ -7,7 +7,3 @@
   align-items: center;
   justify-content: center;
 }
-
-.about-card__overlay_active {
-  justify-content: flex-start;
-}

@@ -5,32 +5,40 @@ import AboutCard from './AboutCard'
 
 function About() {
 
+  const [cards, setCards] = useState(aboutCards)
   const [isActiveCard, setIsActiveCard] = useState(null)
 
-  function handleCardClick(el) {
+  function filterCards(id) {
+    setCards(aboutCards.filter((el) => el.id === id))
+  }
+
+  function handleCardClick(el, id) {
     if (!isActiveCard) {
       setIsActiveCard(el)
-    } else {
+      filterCards(id)
+    }
+  }
+
+  function handleCloseCard() {
+    if (isActiveCard) {
       setIsActiveCard(null)
+      setCards(aboutCards)
     }
   }
 
   return (
     <section className="about">
-      <div className="about__container">
-        {aboutCards.map((card) => {
+      <div className={`about__container ${isActiveCard ? 'about__container_active' : ''}`}>
+        {cards.map((card) => {
           return <AboutCard
             key={card.id}
             card={card}
             src={card.id}
             title={card.title}
             text={card.text}
-            onClickCard={() => handleCardClick(card)}
+            onClickCard={() => handleCardClick(card, card.id)}
+            onClose={handleCloseCard}
             isActiveCard={isActiveCard}
-            cardClassName={`about-card ${isActiveCard === card ? 'about-card_active' : ''}`}
-            cardWrapperClassName={`about-card__overlay ${isActiveCard === card ? 'about-card__overlay' : ''}`}
-            // cardTitleClassName={`about-card__title ${isActiveCard === card ? 'about-card__title_active' : ''}`}
-            // cardTextContainerClassName={`about-card__text-container ${isActiveCard === card ? 'about-card__text-container_active' : ''}`}
           />
         })}
       </div>
