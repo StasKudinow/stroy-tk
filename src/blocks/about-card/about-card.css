@@ -6,3 +6,7 @@
   position: relative;
   z-index: 10;
 }
+
+.about-card:hover .about-card__title {
+  color: #FFAC30;
+}

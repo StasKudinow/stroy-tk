@@ -51,5 +51,6 @@
 @import url(./blocks/about-card/__button/about-card__button.css);
 @import url(./blocks/about-card/__button/_second/about-card__button_second.css);
 @import url(./blocks/about-card/__button-arrow/about-card__button-arrow.css);
+@import url(./blocks/about-card/__button-arrow/_second/about-card__button-arrow_second.css);
 @import url(./blocks/about-card/__close-button/about-card__close-button.css);
 @import url(./blocks/about-card/__line/about-card__line.css);

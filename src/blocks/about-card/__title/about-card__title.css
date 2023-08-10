@@ -8,8 +8,3 @@
   color: #FFFFFF;
   transition: all 0.3s ease;
 }
-
-.about-card__title:hover {
-  cursor: pointer;
-  color: #FFAC30;
-}

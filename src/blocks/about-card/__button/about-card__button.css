@@ -11,16 +11,12 @@
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.3rem;
-  color: #FFFFFF;
+  color: #FFAC30;
   text-transform: uppercase;
   transition: all 0.3s ease;
 }
 
 .about-card__button:hover {
   cursor: pointer;
-  color: #FFAC30;
-}
-
-.about-card__button:hover .about-card__button-arrow {
-  background-image: url(../../../images/arrow-gold.svg);
+  opacity: 0.6;
 }

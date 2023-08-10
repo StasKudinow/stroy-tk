@@ -8,8 +8,6 @@ function AboutCard({
   onClickCard,
   onClose,
   isActiveCard,
-  cardClassName,
-  cardOverlayClassName,
 }) {
 
   const variants = {
@@ -35,8 +33,10 @@ function AboutCard({
   return (
     <div
       className="about-card"
+      onClick={onClickCard}
       style={{
-      backgroundImage: `url(${require(`../images/about-image-${src}.png`)})`
+      backgroundImage: `url(${require(`../images/about-image-${src}.png`)})`,
+      cursor: `${isActiveCard ? 'auto': 'pointer'}`
       }}
     >
       <div className="about-card__overlay">
@@ -49,20 +49,15 @@ function AboutCard({
               variants={variants}
               className="about-card__container"
             >
-              <h2
-                className="about-card__title about-card__title_second"
-                onClick={onClickCard}
-              >
-                {title}
-              </h2>
+              <h2 className="about-card__title about-card__title_second">{title}</h2>
               <p className="about-card__text">{text}</p>
               <button className="about-card__button" type="button">
                 галерея
                 <div className="about-card__button-arrow" />
               </button>
-              <button className="about-card__button" type="button" style={{fontSize: "12px"}}>
+              <button className="about-card__button about-card__button_second" type="button">
                 список услуг
-                <div className="about-card__button-arrow about-card__button-arrow" />
+                <div className="about-card__button-arrow about-card__button-arrow_second" />
               </button>
               <button className="about-card__close-button" type="button" onClick={onClose} />
               </motion.div>
