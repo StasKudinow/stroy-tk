@@ -54,3 +54,7 @@
 @import url(./blocks/about-card/__button-arrow/_second/about-card__button-arrow_second.css);
 @import url(./blocks/about-card/__close-button/about-card__close-button.css);
 @import url(./blocks/about-card/__line/about-card__line.css);
+@import url(./blocks/work/work.css);
+@import url(./blocks/work/__title/work__title.css);
+@import url(./blocks/slider/__container/slider__container.css);
+@import url(./blocks/slider/__slide/slider__slide.css);

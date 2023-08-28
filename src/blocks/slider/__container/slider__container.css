@@ -1,0 +1,7 @@
+.slider__container {
+  max-width: 660px;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #FFFFFF !important;
+}

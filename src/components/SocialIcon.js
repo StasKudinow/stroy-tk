@@ -4,7 +4,7 @@ function SocialIcon({ name, href }) {
     <a href={href} target="_blank" rel="noreferrer">
       <img
         className="left-panel__icon"
-        src={require(`../images/social-icon-${name}.svg`)}
+        src={require(`../images/social-icons/social-icon-${name}.svg`)}
         alt={name}
       />
     </a>

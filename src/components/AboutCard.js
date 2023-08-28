@@ -17,7 +17,7 @@ function AboutCard({
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.5,
+        delay: 0.3,
         duration: 0.3
       }
     },
@@ -35,7 +35,7 @@ function AboutCard({
       className="about-card"
       onClick={onClickCard}
       style={{
-      backgroundImage: `url(${require(`../images/about-image-${src}.png`)})`,
+      backgroundImage: `url(${require(`../images/about-images/about-image-${src}.png`)})`,
       cursor: `${isActiveCard ? 'auto': 'pointer'}`
       }}
     >

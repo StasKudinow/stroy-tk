@@ -8,6 +8,7 @@ import RightPanel from './RightPanel'
 import Promo from './Promo'
 import Professionals from './Professionals'
 import About from './About'
+import HowWeWork from './HowWeWork'
 
 function App() {
 
@@ -36,19 +37,28 @@ function App() {
   return (
     <main className="page">
       <Logo />
+
       <Header showAnimate={showAnimate} />
+
       <div className="fixed-panels">
         <LeftPanel showAnimate={showAnimate} />
         <RightPanel />
       </div>
+
       <Element name="promo">
         <Promo />
       </Element>
+
       <Element name="professionals">
         <Professionals />
       </Element>
+
       <Element name="about">
         <About />
+      </Element>
+
+      <Element name="how-we-work">
+        <HowWeWork />
       </Element>
     </main>
   )

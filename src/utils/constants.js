@@ -21,7 +21,7 @@ export const bullets = [
   { id: 1, href: 'promo' },
   { id: 2, href: 'professionals' },
   { id: 3, href: 'about' },
-  { id: 4, href: '' },
+  { id: 4, href: 'how-we-work' },
   { id: 5, href: '' },
 ]
 
@@ -50,5 +50,38 @@ export const aboutCards = [
     id: 5,
     title: 'Проектирование и монтаж электросетей',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+  },
+]
+
+export const workSlides = [
+  {
+    id: 1,
+    title: 'оставляете заявку',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    id: 2,
+    title: 'выезд специалиста на объект',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    id: 3,
+    title: 'составление сметы',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    id: 4,
+    title: 'подписание договора',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    id: 5,
+    title: 'начало работ',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    id: 6,
+    title: 'завершение',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   },
 ]
