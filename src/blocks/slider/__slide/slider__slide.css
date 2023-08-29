@@ -1,41 +1,7 @@
 .slider__slide {
-  padding: 0 70px;
+  margin: 0 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 26px;
-}
-
-.slider__slide-icon {
-  width: 70px;
-  height: 70px;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.slider__text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.slider__title {
-  max-width: 400px;
-  margin: 0;
-  color: #FFFFFF;
-  font-size: 28px;
-  font-weight: 300;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.slider__text {
-  max-width: 400px;
-  margin: 0;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: normal;
-  text-transform: uppercase;
 }

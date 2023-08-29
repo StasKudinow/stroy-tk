@@ -1,23 +1,28 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules'
+import { Navigation, Pagination } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
-import 'swiper/css/scrollbar'
 
 import { workSlides } from '../utils/constants'
 
 function Slider() {
 
+  const pagination = {
+    type: 'fraction',
+    renderFraction: function (currentClass) {
+      return '<span class="' + currentClass + '">';
+    },
+  }
+
   return (
     <Swiper
       className="slider__container"
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation, Pagination]}
       slidesPerView={1}
-      navigation
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      navigation={true}
+      pagination={pagination}
     >
       {workSlides.map((item) => {
         return <SwiperSlide key={item.id}>

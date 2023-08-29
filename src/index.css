@@ -58,3 +58,7 @@
 @import url(./blocks/work/__title/work__title.css);
 @import url(./blocks/slider/__container/slider__container.css);
 @import url(./blocks/slider/__slide/slider__slide.css);
+@import url(./blocks/slider/__slide-icon/slider__slide-icon.css);
+@import url(./blocks/slider/__text-container/slider__text-container.css);
+@import url(./blocks/slider/__title/slider__title.css);
+@import url(./blocks/slider/__text/slider__text.css);
