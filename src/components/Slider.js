@@ -1,13 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-import { workSlides } from '../utils/constants'
-
-function Slider() {
+function Slider({ workSlides, partnersSlides }) {
 
   const pagination = {
     type: 'fraction',
@@ -19,16 +17,24 @@ function Slider() {
   return (
     <Swiper
       className="slider__container"
-      modules={[Navigation, Pagination]}
-      slidesPerView={1}
-      navigation={true}
-      pagination={pagination}
+      modules={[Navigation, Pagination, Autoplay]}
+      slidesPerView={workSlides ? 1 : 3}
+      navigation={workSlides && true}
+      pagination={workSlides && pagination}
+      spaceBetween={partnersSlides && 50}
+      grabCursor={partnersSlides && true}
+      loop={partnersSlides && true}
+      freeMode={partnersSlides && true}
+      autoplay={partnersSlides && {
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
     >
-      {workSlides.map((item) => {
+      {workSlides && workSlides.map((item) => {
         return <SwiperSlide key={item.id}>
           <div className="slider__slide">
             <div
-              className="slider__slide-icon"
+              className="slider__icon"
               style={{backgroundImage: `url(${require(`../images/work-icons/work-icon-${item.id}.svg`)})`}}
             />
             <div className="slider__text-container">
@@ -36,6 +42,15 @@ function Slider() {
               <p className="slider__text">{item.text}</p>
             </div>
           </div>
+        </SwiperSlide>
+      })}
+      {partnersSlides && partnersSlides.map((item) => {
+        return <SwiperSlide key={item.name}>
+          <img
+            className="slider__image"
+            src={require(`../images/partners-images/partners-${item.name}.png`)}
+            alt={item.name}
+          />
         </SwiperSlide>
       })}
     </Swiper>

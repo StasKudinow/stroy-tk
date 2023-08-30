@@ -9,6 +9,7 @@ import Promo from './Promo'
 import Professionals from './Professionals'
 import About from './About'
 import HowWeWork from './HowWeWork'
+import Partners from './Partners'
 
 function App() {
 
@@ -59,6 +60,10 @@ function App() {
 
       <Element name="how-we-work">
         <HowWeWork />
+      </Element>
+
+      <Element name="partners">
+        <Partners />
       </Element>
     </main>
   )

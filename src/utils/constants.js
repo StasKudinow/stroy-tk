@@ -22,7 +22,7 @@ export const bullets = [
   { id: 2, href: 'professionals' },
   { id: 3, href: 'about' },
   { id: 4, href: 'how-we-work' },
-  { id: 5, href: '' },
+  { id: 5, href: 'partners' },
 ]
 
 export const aboutCards = [
@@ -84,4 +84,13 @@ export const workSlides = [
     title: 'завершение',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
   },
+]
+
+export const partnersSlides = [
+  { name: 'rzd' },
+  { name: 'arguments' },
+  { name: 'okey' },
+  { name: 'sber1' },
+  { name: 'uralsib' },
+  { name: 'sber2' },
 ]

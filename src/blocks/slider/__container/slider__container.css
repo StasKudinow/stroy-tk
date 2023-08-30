@@ -11,6 +11,11 @@
   overflow-y: visible !important;
 }
 
+.swiper-slide {
+  display: flex !important;
+  align-items: center !important;
+}
+
 .swiper-pagination {
   height: 75px;
   top: -115px !important;
