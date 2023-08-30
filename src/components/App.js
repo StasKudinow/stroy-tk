@@ -10,6 +10,7 @@ import Professionals from './Professionals'
 import About from './About'
 import HowWeWork from './HowWeWork'
 import Partners from './Partners'
+import Footer from './Footer'
 
 function App() {
 
@@ -64,6 +65,10 @@ function App() {
 
       <Element name="partners">
         <Partners />
+      </Element>
+
+      <Element name="footer">
+        <Footer />
       </Element>
     </main>
   )

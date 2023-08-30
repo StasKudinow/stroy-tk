@@ -23,6 +23,7 @@ export const bullets = [
   { id: 3, href: 'about' },
   { id: 4, href: 'how-we-work' },
   { id: 5, href: 'partners' },
+  { id: 6, href: 'footer' },
 ]
 
 export const aboutCards = [

@@ -1,0 +1,9 @@
+.footer__text {
+  max-width: 500px;
+  margin: 0 0 150px;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}

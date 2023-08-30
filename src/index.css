@@ -69,3 +69,9 @@
 @import url(./blocks/partners/__title/partners__title.css);
 @import url(./blocks/partners/__text-container/partners__text-container.css);
 @import url(./blocks/partners/__text/partners__text.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__wrapper/footer__wrapper.css);
+@import url(./blocks/footer/__block/footer__block.css);
+@import url(./blocks/footer/__title/footer__title.css);
+@import url(./blocks/footer/__tablet/footer__tablet.css);
+@import url(./blocks/footer/__text/footer__text.css);
