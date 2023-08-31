@@ -6,4 +6,6 @@
   font-weight: 300;
   line-height: normal;
   text-transform: uppercase;
+  align-self: center;
+  justify-self: center;
 }

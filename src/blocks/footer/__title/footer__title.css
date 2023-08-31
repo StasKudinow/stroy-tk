@@ -7,4 +7,6 @@
   letter-spacing: 0.3rem;
   color: #FFFFFF;
   text-transform: uppercase;
+  align-self: center;
+  justify-self: center;
 }

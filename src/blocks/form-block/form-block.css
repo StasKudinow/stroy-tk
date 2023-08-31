@@ -1,0 +1,7 @@
+.form-block {
+  width: 600px;
+  height: 300px;
+  background-color: #FFFFFF;
+  opacity: 0.5;
+  align-self: flex-end;
+}

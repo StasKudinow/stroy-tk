@@ -1,6 +1,7 @@
 .promo__slogan {
   width: 650px;
   height: 380px;
+  margin: 250px 0 0 250px;
   background-image: url(../../../images/promo-slogan.svg);
   background-size: contain;
   background-position: center;

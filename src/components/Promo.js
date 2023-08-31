@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 
+import FormBlock from './FormBlock'
+
 function Promo() {
 
   const sloganVariant = {
@@ -25,12 +27,11 @@ function Promo() {
       className="promo"
     >
       <div className="promo__wrapper">
-        <div className="promo__slogan-wrapper">
-          <motion.div
-            variants={sloganVariant}
-            className="promo__slogan"
-          />
-        </div>
+        <motion.div
+          variants={sloganVariant}
+          className="promo__slogan"
+        />
+        <FormBlock />
       </div>
     </motion.section>
   )
