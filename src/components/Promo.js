@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 
 import FormBlock from './FormBlock'
+import Discount from './Discount'
+
 
 function Promo() {
 
@@ -31,7 +33,9 @@ function Promo() {
           variants={sloganVariant}
           className="promo__slogan"
         />
-        <FormBlock />
+        <FormBlock>
+          <Discount />
+        </FormBlock>
       </div>
     </motion.section>
   )

@@ -115,18 +115,18 @@ function Professionals() {
         <div className="professionals__button-container">
           <div />
           <button className="professionals__button" type="button">
-              <motion.p
-                variants={btnVariant}
-                custom={5}
-              >
-                подробнее о нас
-              </motion.p>
-              <motion.div
-                variants={btnVariant}
-                custom={4}
-                className="professionals__arrow"
-              />
-            </button>
+            <motion.p
+              variants={btnVariant}
+              custom={5}
+            >
+              подробнее о нас
+            </motion.p>
+            <motion.div
+              variants={btnVariant}
+              custom={4}
+              className="professionals__arrow"
+            />
+          </button>
           <FormBlock />
         </div>
       </motion.div>

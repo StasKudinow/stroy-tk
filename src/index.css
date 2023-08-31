@@ -77,3 +77,12 @@
 @import url(./blocks/footer/__tablet/footer__tablet.css);
 @import url(./blocks/footer/__text/footer__text.css);
 @import url(./blocks/form-block/form-block.css);
+@import url(./blocks/form-block/form-block__overlay/form-block__overlay.css);
+@import url(./blocks/discount/discount.css);
+@import url(./blocks/discount/__content/discount__content.css);
+@import url(./blocks/discount/__title-container/discount__text-container.css);
+@import url(./blocks/discount/__procent/discount__procent.css);
+@import url(./blocks/discount/__title/discount__title.css);
+@import url(./blocks/discount/__text/discount__text.css);
+@import url(./blocks/form-button/form-button.css);
+@import url(./blocks/form-button/__arrow/form-button__arrow.css);

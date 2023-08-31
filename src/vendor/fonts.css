@@ -1,4 +1,13 @@
 @font-face {
+  font-family: "BrunoAce";
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/BrunoAce-Regular.ttf) format("ttf"),
+       url(../fonts/BrunoAce-Regular.woff) format("woff"),
+       url(../fonts/BrunoAce-Regular.woff2) format("woff2");
+}
+
+@font-face {
   font-family: "OpenSans";
   font-weight: 300;
   font-display: swap;
@@ -23,13 +32,4 @@
   src: url(../fonts/OpenSans-SemiBold.ttf) format("ttf"),
        url(../fonts/OpenSans-SemiBold.woff) format("woff"),
        url(../fonts/OpenSans-SemiBold.woff2) format("woff2");
-}
-
-@font-face {
-  font-family: "BrunoAce";
-  font-weight: 400;
-  font-display: swap;
-  src: url(../fonts/BrunoAce-Regular.ttf) format("ttf"),
-       url(../fonts/BrunoAce-Regular.woff) format("woff"),
-       url(../fonts/BrunoAce-Regular.woff2) format("woff2");
 }
