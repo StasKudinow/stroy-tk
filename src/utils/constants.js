@@ -1,3 +1,4 @@
+// Mock data
 export const socials = [
   {
     name: 'vk',
@@ -95,3 +96,120 @@ export const partnersSlides = [
   { name: 'uralsib' },
   { name: 'sber2' },
 ]
+
+// Animations
+export const sloganVariants = {
+  hidden: {
+    x: -200,
+    opacity: 0,
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      delay: 0.2
+    }
+  }
+}
+
+export const aboutCardVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      delay: 0.3,
+      duration: 0.3
+    }
+  },
+  closed: {
+    opacity: 0,
+    transition: {
+      delay: 0,
+      duration: 0
+    }
+  }
+}
+
+export const headerVariants = {
+  hidden: {
+    y: -100,
+  },
+  visible: {
+    y: 0,
+    transition: {
+      duration: 0.3
+    }
+  },
+  closed: {
+    y: -100,
+    transition: {
+      duration: 0.3
+    }
+  }
+}
+
+export const leftPanelVariants = {
+  hidden: {
+    x: -100,
+  },
+  visible: {
+    x: 0,
+    transition: {
+      duration: 0.3
+    }
+  },
+  closed: {
+    x: -100,
+    transition: {
+      duration: 0.3
+    }
+  }
+}
+
+export const professionalsTitleVariants = {
+  hidden: {
+    y: -80,
+    opacity: 0,
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      delay: custom * 0.2
+    }
+  })
+}
+
+export const professionalsTextVariants = {
+  hidden: {
+    y: 80,
+    opacity: 0,
+  },
+  visible: custom => ({
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      delay: custom * 0.2
+    }
+  })
+}
+
+export const professionalsBtnVariants = {
+  hidden: {
+    x: -80,
+    opacity: 0,
+  },
+  visible: custom => ({
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      delay: custom * 0.2
+    }
+  })
+}

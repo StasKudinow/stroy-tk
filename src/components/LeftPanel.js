@@ -1,27 +1,10 @@
 import { motion, AnimatePresence } from 'framer-motion'
-
-import SocialIcon from './SocialIcon'
+import { leftPanelVariants } from '../utils/constants'
 import { socials } from '../utils/constants'
 
-function LeftPanel({ showAnimate }) {
+import SocialIcon from './SocialIcon'
 
-  const leftPanelVariant = {
-    hidden: {
-      x: -100,
-    },
-    visible: {
-      x: 0,
-      transition: {
-        duration: 0.3
-      }
-    },
-    closed: {
-      x: -100,
-      transition: {
-        duration: 0.3
-      }
-    }
-  }
+function LeftPanel({ showAnimate }) {
 
   return (
     <AnimatePresence>
@@ -30,7 +13,7 @@ function LeftPanel({ showAnimate }) {
           initial="hidden"
           animate="visible"
           exit="closed"
-          variants={leftPanelVariant}
+          variants={leftPanelVariants}
           className="left-panel"
         >
           <hr className="left-panel__line" />

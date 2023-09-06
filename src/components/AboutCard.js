@@ -1,4 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion'
+import { aboutCardVariants } from '../utils/constants'
 
 function AboutCard({
   card,
@@ -9,26 +10,6 @@ function AboutCard({
   onClose,
   isActiveCard,
 }) {
-
-  const variants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        delay: 0.3,
-        duration: 0.3
-      }
-    },
-    closed: {
-      opacity: 0,
-      transition: {
-        delay: 0,
-        duration: 0
-      }
-    }
-  }
 
   return (
     <div
@@ -46,7 +27,7 @@ function AboutCard({
               initial="hidden"
               animate="visible"
               exit="closed"
-              variants={variants}
+              variants={aboutCardVariants}
               className="about-card__container"
             >
               <h2 className="about-card__title about-card__title_second">{title}</h2>
@@ -66,7 +47,7 @@ function AboutCard({
                 initial="hidden"
                 animate="visible"
                 exit="closed"
-                variants={variants}
+                variants={aboutCardVariants}
                 className="about-card__title"
                 onClick={onClickCard}
               >

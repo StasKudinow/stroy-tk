@@ -1,24 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
+import { headerVariants } from '../utils/constants'
 
 function Header({ showAnimate }) {
-
-  const headerVariant = {
-    hidden: {
-      y: -100,
-    },
-    visible: {
-      y: 0,
-      transition: {
-        duration: 0.3
-      }
-    },
-    closed: {
-      y: -100,
-      transition: {
-        duration: 0.3
-      }
-    }
-  }
 
   return (
     <header className="header">
@@ -28,7 +11,7 @@ function Header({ showAnimate }) {
             initial="hidden"
             animate="visible"
             exit="closed"
-            variants={headerVariant}
+            variants={headerVariants}
             className="header__container"
           >
             <div className="header__content">

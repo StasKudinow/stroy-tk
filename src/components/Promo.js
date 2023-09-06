@@ -1,25 +1,11 @@
 import { motion } from 'framer-motion'
+import { sloganVariants } from '../utils/constants'
 
 import FormBlock from './FormBlock'
 import Discount from './Discount'
 
 
 function Promo() {
-
-  const sloganVariant = {
-    hidden: {
-      x: -200,
-      opacity: 0,
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.3,
-        delay: 0.2
-      }
-    }
-  }
 
   return (
     <motion.section
@@ -30,7 +16,7 @@ function Promo() {
     >
       <div className="promo__wrapper">
         <motion.div
-          variants={sloganVariant}
+          variants={sloganVariants}
           className="promo__slogan"
         />
         <FormBlock>
