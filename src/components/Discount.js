@@ -11,7 +11,11 @@ function Discount() {
         </div>
         <p className="discount__text">На время карантина скидка 50% на все пакеты услуг. Гарантия качества до 5-ти лет!</p>
       </div>
-      <FormButton text="Заказать звонок" />
+      <FormButton
+        text="Заказать звонок"
+        type="button"
+        handler="open-popup"
+      />
     </div>
   )
 }

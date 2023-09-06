@@ -16,7 +16,16 @@
   z-index: 10;
 }
 
+.form-button_disabled {
+  color: rgba(255, 255, 255, 0.2);
+}
+
 .form-button:hover {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.4;
+}
+
+.form-button_disabled:hover {
+  cursor: auto;
+  opacity: 1;
 }

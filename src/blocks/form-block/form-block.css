@@ -1,6 +1,6 @@
 .form-block {
   width: 600px;
   height: 300px;
-  background-color: #FFFFFF;
   align-self: flex-end;
+  position: relative;
 }

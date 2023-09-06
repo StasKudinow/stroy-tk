@@ -1,0 +1,28 @@
+.order-form__field {
+  width: 100%;
+  height: 30px;
+  padding: 0 0 5px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  outline: none;
+}
+
+.order-form__field_error {
+  border-bottom: 1px solid #FF4242;
+}
+
+.order-form__field:focus {
+  border-bottom: 1px solid #FFAC30;
+}
+
+.order-form__field::placeholder {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: normal;
+  color: #F8F8FF;
+  opacity: 0.5;
+}

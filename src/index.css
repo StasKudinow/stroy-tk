@@ -86,3 +86,6 @@
 @import url(./blocks/discount/__text/discount__text.css);
 @import url(./blocks/form-button/form-button.css);
 @import url(./blocks/form-button/__arrow/form-button__arrow.css);
+@import url(./blocks/order-form/order-form.css);
+@import url(./blocks/order-form/__field/order-form__field.css);
+@import url(./blocks/order-form/__error-message/order-form__error-message.css);

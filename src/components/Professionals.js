@@ -6,6 +6,7 @@ import {
 } from '../utils/constants'
 
 import FormBlock from './FormBlock'
+import OrderForm from './OrderForm'
 
 function Professionals() {
 
@@ -74,7 +75,7 @@ function Professionals() {
         </div>
         <div className="professionals__button-container">
           <div />
-          <button className="professionals__button" type="button">
+          <button className="professionals__button" type="button" onClick={() => console.log('click')}>
             <motion.p
               variants={professionalsBtnVariants}
               custom={5}
@@ -87,7 +88,9 @@ function Professionals() {
               className="professionals__arrow"
             />
           </button>
-          <FormBlock />
+          <FormBlock>
+            <OrderForm />
+          </FormBlock>
         </div>
       </motion.div>
     </section>
