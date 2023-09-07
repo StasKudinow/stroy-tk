@@ -1,7 +1,10 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { headerVariants } from '../utils/constants'
 
-function Header({ showAnimate }) {
+function Header({
+  showAnimate,
+  onOpenPopup
+}) {
 
   return (
     <header className="header">
@@ -21,7 +24,11 @@ function Header({ showAnimate }) {
               </div>
               <div className="header__right-block">
                 <p className="header__call-text">Заказать звонок</p>
-                <button className="header__call-button" type="button">
+                <button
+                  className="header__call-button"
+                  type="button"
+                  onClick={onOpenPopup}
+                >
                   <div className="header__call-button-circle">
                     <div className="header__call-button-image" />
                   </div>

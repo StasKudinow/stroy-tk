@@ -5,7 +5,7 @@ import FormBlock from './FormBlock'
 import Discount from './Discount'
 
 
-function Promo() {
+function Promo({ onOpenPopup }) {
 
   return (
     <motion.section
@@ -20,7 +20,9 @@ function Promo() {
           className="promo__slogan"
         />
         <FormBlock>
-          <Discount />
+          <Discount
+            onOpenPopup={onOpenPopup}
+          />
         </FormBlock>
       </div>
     </motion.section>

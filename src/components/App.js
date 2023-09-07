@@ -11,11 +11,15 @@ import About from './About'
 import HowWeWork from './HowWeWork'
 import Partners from './Partners'
 import Footer from './Footer'
+import PopupWithOrderForm from './PopupWithOrderForm'
+import PopupWithThanks from './PopupWithThanks'
 
 function App() {
 
   const [showAnimate, setShowAnimate] = useState(true)
   const [lastScrollY, setLastScrpllY] = useState(0)
+  const [isPopupWithOrderFormOpen, setIsPopupWithOrderFormOpen] = useState(false)
+  const [isPopupWithThanksOpen, setIsPopupWithThanksOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,23 +40,47 @@ function App() {
     }
   }, [lastScrollY])
 
+  function handleOrderCallButton() {
+    setIsPopupWithOrderFormOpen(true)
+  }
+
+  function closeAllPopups() {
+    setIsPopupWithOrderFormOpen(false)
+    setIsPopupWithThanksOpen(false)
+  }
+
+  function handleOrderSubmit(values) {
+    console.log('Имя:', values.name, 'Телефон:', values.phone)
+    closeAllPopups()
+    setIsPopupWithThanksOpen(true)
+  }
+
   return (
     <main className="page">
       <Logo />
 
-      <Header showAnimate={showAnimate} />
+      <Header
+        showAnimate={showAnimate}
+        onOpenPopup={handleOrderCallButton}
+      />
 
       <div className="fixed-panels">
-        <LeftPanel showAnimate={showAnimate} />
+        <LeftPanel
+          showAnimate={showAnimate}
+        />
         <RightPanel />
       </div>
 
       <Element name="promo">
-        <Promo />
+        <Promo
+          onOpenPopup={handleOrderCallButton}
+        />
       </Element>
 
       <Element name="professionals">
-        <Professionals />
+        <Professionals
+          onOrderSubmit={handleOrderSubmit}
+        />
       </Element>
 
       <Element name="about">
@@ -60,7 +88,9 @@ function App() {
       </Element>
 
       <Element name="how-we-work">
-        <HowWeWork />
+        <HowWeWork
+          onOrderSubmit={handleOrderSubmit}
+        />
       </Element>
 
       <Element name="partners">
@@ -68,8 +98,21 @@ function App() {
       </Element>
 
       <Element name="footer">
-        <Footer />
+        <Footer
+          onOrderSubmit={handleOrderSubmit}
+        />
       </Element>
+
+      <PopupWithOrderForm
+        isOpen={isPopupWithOrderFormOpen}
+        onClosePopup={closeAllPopups}
+        onOrderSubmit={handleOrderSubmit}
+      />
+
+      <PopupWithThanks
+        isOpen={isPopupWithThanksOpen}
+        onClosePopup={closeAllPopups}
+      />
     </main>
   )
 }

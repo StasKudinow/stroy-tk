@@ -4,7 +4,7 @@ import OrderForm from './OrderForm'
 
 import { workSlides } from '../utils/constants'
 
-function HowWeWork() {
+function HowWeWork({ onOrderSubmit }) {
 
   return (
     <section className="work">
@@ -12,7 +12,10 @@ function HowWeWork() {
         <h2 className="work__title">6 шагов к вашему проекту:</h2>
         <Slider workSlides={workSlides} />
         <FormBlock>
-          <OrderForm />
+          <OrderForm
+            onOrderSubmit={onOrderSubmit}
+            btnText="Обсудить проект"
+          />
         </FormBlock>
       </div>
     </section>

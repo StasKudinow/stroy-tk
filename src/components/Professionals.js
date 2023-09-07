@@ -8,7 +8,7 @@ import {
 import FormBlock from './FormBlock'
 import OrderForm from './OrderForm'
 
-function Professionals() {
+function Professionals({ onOrderSubmit }) {
 
   return (
     <section className="professionals">
@@ -89,7 +89,10 @@ function Professionals() {
             />
           </button>
           <FormBlock>
-            <OrderForm />
+            <OrderForm
+              onOrderSubmit={onOrderSubmit}
+              btnText="Обсудить проект"
+            />
           </FormBlock>
         </div>
       </motion.div>

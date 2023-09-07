@@ -213,3 +213,6 @@ export const professionalsBtnVariants = {
     }
   })
 }
+
+// Alt styles
+export const COLOR_WHITE = { color: '#FFFFFF' }

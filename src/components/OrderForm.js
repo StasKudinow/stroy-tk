@@ -4,7 +4,11 @@ import { Formik, Form, Field } from 'formik'
 import FormButton from './FormButton'
 import { validateName, validatePhone } from '../utils/validation'
 
-function OrderForm({ footerTextColor }) {
+function OrderForm({
+  inputTextColor,
+  onOrderSubmit,
+  btnText
+}) {
 
   const [disabled, setDisabled] = useState(false)
 
@@ -15,8 +19,9 @@ function OrderForm({ footerTextColor }) {
           name: '',
           phone: '',
         }}
-        onSubmit={(values) => {
-          console.log('Имя:', values.name, 'Телефон:', values.phone)
+        onSubmit={(values, {resetForm}) => {
+          onOrderSubmit(values)
+          resetForm()
         }}
         validateOnMount
       >
@@ -24,7 +29,7 @@ function OrderForm({ footerTextColor }) {
           <Form noValidate>
             <Field
               className={`order-form__field ${errors.name && touched.name ? 'order-form__field_error' : ''}`}
-              style={footerTextColor ? footerTextColor : {color: '#000000'}}
+              style={inputTextColor ? inputTextColor : {color: '#000000'}}
               type="text"
               name="name"
               placeholder="Ваше имя"
@@ -40,7 +45,7 @@ function OrderForm({ footerTextColor }) {
             }
             <Field
               className={`order-form__field ${errors.phone && touched.phone ? 'order-form__field_error' : ''}`}
-              style={footerTextColor ? footerTextColor : {color: '#000000'}}
+              style={inputTextColor ? inputTextColor : {color: '#000000'}}
               type="tel"
               name="phone"
               placeholder="Ваш телефон"
@@ -55,7 +60,7 @@ function OrderForm({ footerTextColor }) {
               <div style={{width: '100%', height: '30px'}} />
             }
             <FormButton
-              text="Обсудить проект"
+              text={btnText}
               type="submit"
               handler="null"
               disabled={disabled}

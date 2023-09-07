@@ -3,12 +3,13 @@ function FormButton({
   type,
   handler,
   disabled,
+  onOpenPopup
 }) {
 
   function handleClick() {
     switch (handler) {
       case 'open-popup':
-        console.log('Открыл попап')
+        onOpenPopup()
         break
       case 'null':
         return null

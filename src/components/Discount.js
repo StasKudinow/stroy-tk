@@ -1,6 +1,6 @@
 import FormButton from "./FormButton"
 
-function Discount() {
+function Discount({ onOpenPopup }) {
 
   return (
     <div className="discount">
@@ -15,6 +15,7 @@ function Discount() {
         text="Заказать звонок"
         type="button"
         handler="open-popup"
+        onOpenPopup={onOpenPopup}
       />
     </div>
   )
