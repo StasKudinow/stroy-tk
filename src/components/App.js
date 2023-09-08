@@ -57,11 +57,8 @@ function App() {
 
   return (
     <main className="page">
-      <Logo />
-
-      <Header
-        showAnimate={showAnimate}
-        onOpenPopup={handleOrderCallButton}
+      <Logo
+        onClosePopup={closeAllPopups}
       />
 
       <div className="fixed-panels">
@@ -70,6 +67,11 @@ function App() {
         />
         <RightPanel />
       </div>
+
+      <Header
+        showAnimate={showAnimate}
+        onOpenPopup={handleOrderCallButton}
+      />
 
       <Element name="promo">
         <Promo

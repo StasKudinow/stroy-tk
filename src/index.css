@@ -13,6 +13,8 @@
 @import url(./blocks/header/__call-button/header__call-button.css);
 @import url(./blocks/header/__call-button-circle/header__call-button-circle.css);
 @import url(./blocks/header/__call-button-image/header__call-button-image.css);
+@import url(./blocks/header/__menu/header__menu.css);
+@import url(./blocks/header/__menu-link/header__menu-link.css);
 @import url(./blocks/fixed-panels/fixed-panels.css);
 @import url(./blocks/left-panel/left-panel.css);
 @import url(./blocks/left-panel/__line/left-panel__line.css);

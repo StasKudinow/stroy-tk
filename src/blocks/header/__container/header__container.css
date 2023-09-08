@@ -1,5 +1,9 @@
 .header__container {
-  max-width: 1280px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
 }

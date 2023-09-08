@@ -13,6 +13,7 @@ function Promo({ onOpenPopup }) {
       whileInView="visible"
       viewport={{ amount: 0.6 }}
       className="promo"
+      id="promo"
     >
       <div className="promo__wrapper">
         <motion.div

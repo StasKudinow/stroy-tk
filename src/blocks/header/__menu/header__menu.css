@@ -1,0 +1,13 @@
+.header__menu {
+  margin: 0;
+  padding: 37px 20px 37px;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.header__menu_active {
+  display: flex;
+}

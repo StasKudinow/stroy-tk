@@ -27,6 +27,29 @@ export const bullets = [
   { id: 6, href: 'footer' },
 ]
 
+export const navLinks = [
+  {
+    text: 'о нас',
+    href: 'professionals'
+  },
+  {
+    text: 'услуги',
+    href: 'about'
+  },
+  {
+    text: '6 шагов к вашему проекту',
+    href: 'how-we-work'
+  },
+  {
+    text: 'партнеры',
+    href: 'partners'
+  },
+  {
+    text: 'контакты',
+    href: 'footer'
+  },
+]
+
 export const aboutCards = [
   {
     id: 1,
@@ -135,7 +158,7 @@ export const aboutCardVariants = {
 
 export const headerVariants = {
   hidden: {
-    y: -100,
+    y: -200,
   },
   visible: {
     y: 0,
@@ -144,7 +167,7 @@ export const headerVariants = {
     }
   },
   closed: {
-    y: -100,
+    y: -200,
     transition: {
       duration: 0.3
     }

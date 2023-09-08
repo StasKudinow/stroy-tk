@@ -1,10 +1,15 @@
+import { useState } from 'react'
+
+import { Link } from 'react-scroll'
 import { motion, AnimatePresence } from 'framer-motion'
-import { headerVariants } from '../utils/constants'
+import { headerVariants, navLinks } from '../utils/constants'
 
 function Header({
   showAnimate,
   onOpenPopup
 }) {
+
+  const [isBurgerMenuClicked, setIsBurgerMenuClicked] = useState(false)
 
   return (
     <header className="header">
@@ -19,7 +24,11 @@ function Header({
           >
             <div className="header__content">
               <div className="header__left-block">
-                <div className="header__burger-menu" />
+                <button
+                  className={`header__burger-menu ${isBurgerMenuClicked ? 'header__burger-menu_active' : ''}`}
+                  type="button"
+                  onClick={() => setIsBurgerMenuClicked(!isBurgerMenuClicked)}
+                />
                 <p className="header__number">8 800 800 80 80</p>
               </div>
               <div className="header__right-block">
@@ -35,6 +44,22 @@ function Header({
                 </button>
               </div>
             </div>
+            <ul className={`header__menu ${isBurgerMenuClicked ? 'header__menu_active' : ''}`}>
+              {navLinks.map((link) => {
+                return <li key={link.href}>
+                  <Link
+                    className="header__menu-link"
+                    to={link.href}
+                    smooth={true}
+                    spy={true}
+                    duration={500}
+                    onClick={() => setIsBurgerMenuClicked(false)}
+                  >
+                    {link.text}
+                  </Link>
+                </li>
+              })}
+            </ul>
           </motion.div>
         }
       </AnimatePresence>

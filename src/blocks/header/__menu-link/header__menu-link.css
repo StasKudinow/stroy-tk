@@ -1,0 +1,14 @@
+.header__menu-link {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.header__menu-link:hover {
+  cursor: pointer;
+  color: #FFAC30;
+}

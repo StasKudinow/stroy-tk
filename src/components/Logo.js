@@ -1,7 +1,9 @@
-function Logo() {
+function Logo({ onClosePopup }) {
 
   return (
-    <div className="logo" />
+    <a href="#promo" onClick={onClosePopup}>
+      <div className="logo" />
+    </a>
   )
 }
 

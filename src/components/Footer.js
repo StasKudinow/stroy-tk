@@ -5,7 +5,7 @@ import { COLOR_WHITE } from '../utils/constants'
 function Footer({ onOrderSubmit }) {
 
   return (
-    <section className="footer">
+    <footer className="footer">
       <div className="footer__wrapper">
         <h2 className="footer__title">Остались вопросы? Задайте их нам напрямую</h2>
         <div className="footer__form-block">
@@ -20,7 +20,7 @@ function Footer({ onOrderSubmit }) {
           Финально якорим клиента, побуждение не терять контакт и подписаться на соцсети!
         </p>
       </div>
-    </section>
+    </footer>
   )
 }
 
