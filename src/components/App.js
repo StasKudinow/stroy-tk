@@ -1,16 +1,7 @@
 import { useState, useEffect } from 'react'
-import { Element } from 'react-scroll'
+import { Route, Routes } from 'react-router-dom'
 
-import Logo from './Logo'
-import Header from './Header'
-import LeftPanel from './LeftPanel'
-import RightPanel from './RightPanel'
-import Promo from './Promo'
-import Professionals from './Professionals'
-import About from './About'
-import HowWeWork from './HowWeWork'
-import Partners from './Partners'
-import Footer from './Footer'
+import Main from './Main'
 import PopupWithOrderForm from './PopupWithOrderForm'
 import PopupWithThanks from './PopupWithThanks'
 
@@ -56,54 +47,18 @@ function App() {
   }
 
   return (
-    <main className="page">
-      <Logo
-        onClosePopup={closeAllPopups}
-      />
+    <div className="page">
 
-      <div className="fixed-panels">
-        <LeftPanel
-          showAnimate={showAnimate}
-        />
-        <RightPanel />
-      </div>
-
-      <Header
-        showAnimate={showAnimate}
-        onOpenPopup={handleOrderCallButton}
-      />
-
-      <Element name="promo">
-        <Promo
-          onOpenPopup={handleOrderCallButton}
-        />
-      </Element>
-
-      <Element name="professionals">
-        <Professionals
-          onOrderSubmit={handleOrderSubmit}
-        />
-      </Element>
-
-      <Element name="about">
-        <About />
-      </Element>
-
-      <Element name="how-we-work">
-        <HowWeWork
-          onOrderSubmit={handleOrderSubmit}
-        />
-      </Element>
-
-      <Element name="partners">
-        <Partners />
-      </Element>
-
-      <Element name="footer">
-        <Footer
-          onOrderSubmit={handleOrderSubmit}
-        />
-      </Element>
+      <Routes>
+        <Route path="/" element={
+          <Main
+            showAnimate={showAnimate}
+            onOpenPopup={handleOrderCallButton}
+            onClosePopup={closeAllPopups}
+            onOrderSubmit={handleOrderSubmit}
+          />
+        } />
+      </Routes>
 
       <PopupWithOrderForm
         isOpen={isPopupWithOrderFormOpen}
@@ -115,7 +70,7 @@ function App() {
         isOpen={isPopupWithThanksOpen}
         onClosePopup={closeAllPopups}
       />
-    </main>
+    </div>
   )
 }
 
