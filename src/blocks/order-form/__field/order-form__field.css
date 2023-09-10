@@ -11,10 +11,6 @@
   outline: none;
 }
 
-.order-form__field_error {
-  border-bottom: 1px solid #FF4242;
-}
-
 .order-form__field:focus {
   border-bottom: 1px solid #FFAC30;
 }

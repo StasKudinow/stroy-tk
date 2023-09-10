@@ -1,26 +1,22 @@
-.form-button {
-  width: 100%;
+.services-card__button {
+  width: 285px;
+  margin: 0 0 70px;
   padding: 0;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 0.4rem;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.3rem;
   color: #FFAC30;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  z-index: 10;
 }
 
-.form-button_disabled {
-  color: rgba(255, 255, 255, 0.2);
-}
-
-.form-button:hover {
+.services-card__button:hover {
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 0.6;
 }

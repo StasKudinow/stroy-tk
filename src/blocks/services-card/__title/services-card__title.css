@@ -1,0 +1,10 @@
+.services-card__title {
+  width: 320px;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  transition: all 0.3s ease;
+}

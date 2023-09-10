@@ -6,7 +6,7 @@ import RightPanel from './RightPanel'
 import Header from './Header'
 import Promo from './Promo'
 import Professionals from './Professionals'
-import About from './About'
+import Serveces from './Serveces'
 import HowWeWork from './HowWeWork'
 import Partners from './Partners'
 import Footer from './Footer'
@@ -48,8 +48,8 @@ function Main({
         />
       </Element>
 
-      <Element name="about">
-        <About />
+      <Element name="serveces">
+        <Serveces />
       </Element>
 
       <Element name="how-we-work">

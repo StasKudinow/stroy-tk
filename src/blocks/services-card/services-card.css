@@ -1,0 +1,12 @@
+.services-card {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 10;
+}
+
+.services-card:hover .services-card__title {
+  color: #FFAC30;
+}

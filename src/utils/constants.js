@@ -1,4 +1,4 @@
-// Mock data
+// mock data
 export const socials = [
   {
     name: 'vk',
@@ -21,7 +21,7 @@ export const socials = [
 export const bullets = [
   { id: 1, href: 'promo' },
   { id: 2, href: 'professionals' },
-  { id: 3, href: 'about' },
+  { id: 3, href: 'serveces' },
   { id: 4, href: 'how-we-work' },
   { id: 5, href: 'partners' },
   { id: 6, href: 'footer' },
@@ -34,7 +34,7 @@ export const navLinks = [
   },
   {
     text: 'услуги',
-    href: 'about'
+    href: 'serveces'
   },
   {
     text: '6 шагов к вашему проекту',
@@ -50,7 +50,7 @@ export const navLinks = [
   },
 ]
 
-export const aboutCards = [
+export const servecesCards = [
   {
     id: 1,
     title: 'Собственное производство электрощитового оборудования',
@@ -120,7 +120,7 @@ export const partnersSlides = [
   { name: 'sber2' },
 ]
 
-// Animations
+// animations
 export const sloganVariants = {
   hidden: {
     x: -200,
@@ -136,7 +136,7 @@ export const sloganVariants = {
   }
 }
 
-export const aboutCardVariants = {
+export const servecesCardVariants = {
   hidden: {
     opacity: 0,
   },
@@ -237,5 +237,5 @@ export const professionalsBtnVariants = {
   })
 }
 
-// Alt styles
+// styles
 export const COLOR_WHITE = { color: '#FFFFFF' }

@@ -1,0 +1,28 @@
+.swiper {
+  overflow-y: visible !important;
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: #FFFFFF !important;
+}
+
+.swiper-pagination {
+  height: 75px;
+  top: -115px !important;
+}
+
+.swiper-pagination-current {
+  width: auto;
+  height: auto;
+  color: #FFFFFF;
+  font-family: "BrunoAce";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
