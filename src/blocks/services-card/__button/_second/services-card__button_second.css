@@ -1,9 +1,15 @@
 .services-card__button_second {
-  font-size: 12px;
+  font-size: 10px;
   color: #FFFFFF;
 }
 
 .services-card__button_second:hover {
   cursor: pointer;
   opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .services-card__button_second {
+    font-size: 12px;
+  }
 }

@@ -1,8 +1,14 @@
 .services-card__button-arrow {
-  width: 115px;
+  width: 80px;
   height: 20px;
   background-image: url(../../../images/arrow-gold.svg);
   background-size: contain;
   background-repeat: no-repeat;
   transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .form-button__arrow {
+    width: 115px;
+  }
 }

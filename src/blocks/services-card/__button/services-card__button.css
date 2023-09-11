@@ -1,15 +1,15 @@
 .services-card__button {
-  width: 285px;
-  margin: 0 0 70px;
+  width: 300px;
+  margin: 0 0 40px;
   padding: 0;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 20px;
+  line-height: normal;
   letter-spacing: 0.3rem;
   color: #FFAC30;
   text-transform: uppercase;
@@ -19,4 +19,12 @@
 .services-card__button:hover {
   cursor: pointer;
   opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .services-card__button {
+    margin: 0 0 70px;
+    font-size: 18px;
+    align-self: flex-start;
+  }
 }

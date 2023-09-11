@@ -1,9 +1,21 @@
 .professionals__content {
   width: 100%;
-  max-width: 1200px;
-  margin-top: 250px;
+  max-width: 600px;
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 80px;
+}
+
+@media (min-width: 1280px) {
+  .professionals__content {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .professionals__content {
+    max-width: 1200px;
+  }
 }

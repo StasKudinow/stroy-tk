@@ -1,7 +1,16 @@
 .discount__text {
-  margin: 20px 0;
-  font-size: 18px;
+  max-width: 300px;
+  margin: 10px 0;
+  font-size: 14px;
   font-weight: 600;
   line-height: normal;
   color: #000000;
+}
+
+@media (min-width: 600px) {
+  .discount__text {
+    max-width: 100%;
+    margin: 20px 0;
+    font-size: 18px;
+  }
 }

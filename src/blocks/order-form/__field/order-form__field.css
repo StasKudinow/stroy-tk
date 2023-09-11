@@ -5,7 +5,7 @@
   background-color: rgba(0, 0, 0, 0);
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   line-height: normal;
   outline: none;
@@ -16,9 +16,19 @@
 }
 
 .order-form__field::placeholder {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   line-height: normal;
   color: #F8F8FF;
   opacity: 0.5;
+}
+
+@media (min-width: 600px) {
+  .order-form__field {
+    font-size: 18px;
+  }
+
+  .order-form__field::placeholder {
+    font-size: 18px;
+  }
 }

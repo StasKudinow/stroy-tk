@@ -6,7 +6,10 @@ import { headerVariants, navLinks } from '../utils/constants'
 
 function Header({
   showAnimate,
-  onOpenPopup
+  onOpenPopup,
+  isLaptop,
+  isTablet,
+  isMobile
 }) {
 
   const [isBurgerMenuClicked, setIsBurgerMenuClicked] = useState(false)
@@ -16,7 +19,7 @@ function Header({
       <AnimatePresence>
         {showAnimate &&
           <motion.div
-            initial="hidden"
+            initial={!isLaptop && 'hidden'}
             animate="visible"
             exit="closed"
             variants={headerVariants}
@@ -29,10 +32,14 @@ function Header({
                   type="button"
                   onClick={() => setIsBurgerMenuClicked(!isBurgerMenuClicked)}
                 />
-                <p className="header__number">8 800 800 80 80</p>
+                {isTablet &&
+                  <p className="header__number">8 800 800 80 80</p>
+                }
               </div>
               <div className="header__right-block">
-                <p className="header__call-text">Заказать звонок</p>
+                {isMobile &&
+                  <p className="header__call-text">Заказать звонок</p>
+                }
                 <button
                   className="header__call-button"
                   type="button"

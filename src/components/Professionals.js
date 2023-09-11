@@ -10,13 +10,18 @@ import {
 import FormBlock from './FormBlock'
 import OrderForm from './OrderForm'
 
-function Professionals({ onOrderSubmit }) {
+function Professionals({
+  onOrderSubmit,
+  isTablet
+}) {
+
+  const windowHeight = document.documentElement.clientHeight
 
   return (
     <section className="professionals">
       <motion.div
         className="professionals__wrapper"
-        initial="hidden"
+        initial={isTablet && 'hidden'}
         whileInView="visible"
         viewport={{ amount: 0.6 }}
       >
@@ -39,7 +44,7 @@ function Professionals({ onOrderSubmit }) {
                 лет на рынке
               </motion.p>
             </div>
-            <div className="professionals__line" />
+            {isTablet && <div className="professionals__line" />}
             <div className="professionals__item">
               <motion.h3
                 variants={professionalsTitleVariants}
@@ -56,7 +61,7 @@ function Professionals({ onOrderSubmit }) {
                 реализованных проектов
               </motion.p>
             </div>
-            <div className="professionals__line" />
+            {isTablet && <div className="professionals__line" />}
             <div className="professionals__item">
               <motion.h3
                 variants={professionalsTitleVariants}
@@ -90,12 +95,14 @@ function Professionals({ onOrderSubmit }) {
               className="professionals__arrow"
             />
           </Link>
-          <FormBlock>
-            <OrderForm
-              onOrderSubmit={onOrderSubmit}
-              btnText="Обсудить проект"
-            />
-          </FormBlock>
+          {windowHeight > 600 &&
+            <FormBlock>
+              <OrderForm
+                onOrderSubmit={onOrderSubmit}
+                btnText="Обсудить проект"
+              />
+            </FormBlock>
+          }
         </div>
       </motion.div>
     </section>

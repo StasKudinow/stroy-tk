@@ -1,5 +1,5 @@
 .services-card {
-  height: 100vh;
+  height: 20vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,4 +9,10 @@
 
 .services-card:hover .services-card__title {
   color: #FFAC30;
+}
+
+@media (min-width: 1600px) {
+  .services-card {
+    height: 100vh;
+  }
 }

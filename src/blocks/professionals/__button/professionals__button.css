@@ -1,8 +1,10 @@
 .professionals__button {
+  max-width: 400px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 14px;
+  align-self: center;
+  font-size: 12px;
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.3rem;
@@ -10,7 +12,6 @@
   color: #FFFFFF;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  z-index: 10;
 }
 
 .professionals__button:hover {
@@ -19,4 +20,17 @@
 
 .professionals__button:hover .professionals__arrow {
   background-image: url(../../../images/arrow-gold.svg);
+}
+
+@media (min-width: 600px) {
+  .professionals__button {
+    max-width: 400px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .professionals__button {
+    z-index: 10;
+  }
 }

@@ -1,9 +1,24 @@
 .header__menu {
   margin: 0;
-  padding: 37px 20px 37px;
+  padding: 20px 0;
   list-style: none;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   display: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+@media (min-width: 600px) {
+  .header__menu {
+    padding: 37px 0;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 960px) {
+  .header__menu {
+    padding: 37px 20px;
+  }
 }

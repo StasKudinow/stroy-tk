@@ -9,6 +9,7 @@ function ServecesCard({
   onClickCard,
   onClose,
   isActiveCard,
+  isDesktop
 }) {
 
   return (
@@ -17,7 +18,8 @@ function ServecesCard({
       onClick={onClickCard}
       style={{
       backgroundImage: `url(${require(`../images/services-images/services-image-${src}.png`)})`,
-      cursor: `${isActiveCard ? 'auto': 'pointer'}`
+      cursor: `${isActiveCard ? 'auto': 'pointer'}`,
+      height: `${isActiveCard ? '100vh': ''}`, // специфичность 1.0.0.0
       }}
     >
       <div className="services-card__overlay">
@@ -56,7 +58,7 @@ function ServecesCard({
             }
           </AnimatePresence>
       </div>
-      <div className="services-card__line" />
+      {isDesktop && <div className="services-card__line" />}
     </div>
   )
 }

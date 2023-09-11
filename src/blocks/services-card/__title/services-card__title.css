@@ -1,10 +1,22 @@
 .services-card__title {
-  width: 320px;
+  max-width: 300px;
   margin: 0;
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
   transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .services-card__title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .services-card__title {
+    font-size: 24px;
+  }
 }

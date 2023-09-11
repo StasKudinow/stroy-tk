@@ -1,9 +1,10 @@
 .header__menu-link {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 300;
   line-height: normal;
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   color: #FFFFFF;
   transition: all 0.3s ease;
 }
@@ -11,4 +12,10 @@
 .header__menu-link:hover {
   cursor: pointer;
   color: #FFAC30;
+}
+
+@media (min-width: 960px) {
+  .header__menu-link {
+    font-size: 20px;
+  }
 }

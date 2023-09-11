@@ -1,9 +1,29 @@
 .promo__slogan {
-  width: 650px;
-  height: 380px;
-  margin: 250px 0 0 250px;
+  height: 280px;
+  margin: 100px 15px 0;
   background-image: url(../../../images/promo-slogan.svg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 600px) {
+  .promo__slogan {
+    width: 500px;
+    height: 280px;
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .promo__slogan {
+    width: 650px;
+    height: 380px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .promo__slogan {
+    margin-left: 250px;
+  }
 }

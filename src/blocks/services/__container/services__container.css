@@ -1,6 +1,13 @@
 .services__container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-auto-rows: repeat(5, 1fr);
   overflow: hidden;
+}
+
+@media (min-width: 1600px) {
+  .services__container {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
 }

@@ -1,10 +1,21 @@
 .professionals__item-text {
   max-width: 335px;
   margin: 0;
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 300;
-  line-height: 40px;
+  line-height: normal;
   text-align: center;
   color: #FFFFFF;
-  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .professionals__item-text {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 1280px) {
+  .professionals__item-text {
+    font-size: 30px;
+  }
 }

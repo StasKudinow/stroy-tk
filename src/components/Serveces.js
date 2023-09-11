@@ -3,7 +3,7 @@ import { servecesCards } from '../utils/constants'
 
 import ServecesCard from './ServecesCard'
 
-function Serveces() {
+function Serveces({ isDesktop }) {
 
   const [cards, setCards] = useState(servecesCards)
   const [isActiveCard, setIsActiveCard] = useState(null)
@@ -39,6 +39,7 @@ function Serveces() {
             onClickCard={() => handleCardClick(card, card.id)}
             onClose={handleCloseCard}
             isActiveCard={isActiveCard}
+            isDesktop={isDesktop}
           />
         })}
       </div>

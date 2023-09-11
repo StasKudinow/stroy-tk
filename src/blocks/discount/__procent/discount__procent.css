@@ -1,8 +1,14 @@
 .discount__procent {
   margin: 0;
-  font-size: 48px;
+  font-size: 38px;
   font-weight: 400;
   line-height: normal;
   font-family: 'BrunoAce';
   color: #000000;
+}
+
+@media (min-width: 600px) {
+  .discount__procent {
+    font-size: 48px;
+  }
 }

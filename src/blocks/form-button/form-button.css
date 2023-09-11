@@ -1,22 +1,29 @@
 .form-button {
-  width: 100%;
+  max-width: 300px;
   padding: 0;
   background-color: rgba(255, 255, 255, 0);
   border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.2rem;
   color: #FFAC30;
   text-transform: uppercase;
   transition: all 0.3s ease;
-  z-index: 10;
 }
 
 .form-button:hover {
   cursor: pointer;
   opacity: 0.4;
+}
+
+@media (min-width: 600px) {
+  .form-button {
+    max-width: 100%;
+    font-size: 20px;
+    letter-spacing: 0.4rem;
+  }
 }

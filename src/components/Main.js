@@ -1,4 +1,5 @@
 import { Element } from 'react-scroll'
+import { useMediaQuery } from 'react-responsive'
 
 import Logo from './Logo'
 import LeftPanel from './LeftPanel'
@@ -18,22 +19,34 @@ function Main({
   onOrderSubmit
 }) {
 
+  const isDesktop = useMediaQuery({ query: '(min-width: 1440px)' })
+  const isLaptop = useMediaQuery({ query: '(min-width: 1024px)' })
+  const isTablet = useMediaQuery({ query: '(min-width: 768px)' })
+  const isMobile = useMediaQuery({ query: '(min-width: 600px)' })
+
   return (
     <main>
-      <Logo
-        onClosePopup={onClosePopup}
-      />
-
-      <div className="fixed-panels">
-        <LeftPanel
-          showAnimate={showAnimate}
+      {isTablet &&
+        <Logo
+          onClosePopup={onClosePopup}
         />
-        <RightPanel />
-      </div>
+      }
+
+      {isLaptop &&
+        <div className="fixed-panels">
+          <LeftPanel
+            showAnimate={showAnimate}
+          />
+          <RightPanel />
+        </div>
+      }
 
       <Header
         showAnimate={showAnimate}
         onOpenPopup={onOpenPopup}
+        isLaptop={isLaptop}
+        isTablet={isTablet}
+        isMobile={isMobile}
       />
 
       <Element name="promo">
@@ -45,11 +58,14 @@ function Main({
       <Element name="professionals">
         <Professionals
           onOrderSubmit={onOrderSubmit}
+          isTablet={isTablet}
         />
       </Element>
 
       <Element name="serveces">
-        <Serveces />
+        <Serveces
+          isDesktop={isDesktop}
+        />
       </Element>
 
       <Element name="how-we-work">
