@@ -1,8 +1,4 @@
 .professionals__button {
-  width: 345px;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,6 +6,7 @@
   font-weight: 300;
   line-height: 20px;
   letter-spacing: 0.3rem;
+  text-decoration: none;
   color: #FFFFFF;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -17,7 +14,6 @@
 }
 
 .professionals__button:hover {
-  cursor: pointer;
   color: #FFAC30;
 }
 

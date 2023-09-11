@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import Main from './Main'
+import About from './About'
 import PopupWithOrderForm from './PopupWithOrderForm'
 import PopupWithThanks from './PopupWithThanks'
 
@@ -57,6 +58,10 @@ function App() {
             onClosePopup={closeAllPopups}
             onOrderSubmit={handleOrderSubmit}
           />
+        } />
+
+        <Route path="/about" element={
+          <About />
         } />
       </Routes>
 

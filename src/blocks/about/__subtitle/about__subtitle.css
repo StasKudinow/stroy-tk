@@ -1,0 +1,9 @@
+.about__subtitle {
+  margin: 0 0 24px;
+  max-width: 900px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}

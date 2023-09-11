@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import { motion } from 'framer-motion'
 import {
   professionalsTitleVariants,
@@ -75,7 +77,7 @@ function Professionals({ onOrderSubmit }) {
         </div>
         <div className="professionals__button-container">
           <div />
-          <button className="professionals__button" type="button" onClick={() => console.log('click')}>
+          <Link to="/about" className="professionals__button">
             <motion.p
               variants={professionalsBtnVariants}
               custom={5}
@@ -87,7 +89,7 @@ function Professionals({ onOrderSubmit }) {
               custom={4}
               className="professionals__arrow"
             />
-          </button>
+          </Link>
           <FormBlock>
             <OrderForm
               onOrderSubmit={onOrderSubmit}

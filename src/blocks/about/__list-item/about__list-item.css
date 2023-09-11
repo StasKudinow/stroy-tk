@@ -1,0 +1,7 @@
+.about__list-item::before {
+  content: '•';
+  font-size: 30px;
+  color: #FFFFFF;
+  position: absolute;
+  left: 0;
+}

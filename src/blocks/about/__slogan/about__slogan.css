@@ -1,0 +1,9 @@
+.about__slogan {
+  width: 470px;
+  height: 220px;
+  margin: 150px 0 0 100px;
+  background-image: url(../../../images/about-slogan.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
