@@ -16,3 +16,9 @@
   cursor: pointer;
   background-image: url(../../../images/close-button-gold.svg);
 }
+
+@media (pointer:coarse) {
+  .popup__close-button:hover {
+    background-image: url(../../../images/close-button-white.svg);
+  }
+}

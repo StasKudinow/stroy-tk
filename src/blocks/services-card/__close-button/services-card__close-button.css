@@ -23,3 +23,9 @@
     right: -35px;
   }
 }
+
+@media (pointer:coarse) {
+  .popup__close-button:hover {
+    background-image: url(../../../images/close-button-white.svg);
+  }
+}

@@ -6,8 +6,12 @@ function Logo({ onClosePopup }) {
   }
 
   return (
-    <button onClick={handleClick} type="button">
-      <div className="logo" />
+    <button
+      className="logo"
+      onClick={handleClick}
+      type="button"
+    >
+      <div className="logo__image" />
     </button>
   )
 }
