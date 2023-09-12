@@ -81,6 +81,7 @@ function Main({
       <Element name="footer">
         <Footer
           onOrderSubmit={onOrderSubmit}
+          isLaptop={isLaptop}
         />
       </Element>
     </main>

@@ -1,0 +1,13 @@
+.footer__links {
+  width: 300px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+}
+
+@media (min-width: 600px) {
+  .footer__links {
+    width: 500px;
+  }
+}

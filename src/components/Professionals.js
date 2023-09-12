@@ -95,7 +95,7 @@ function Professionals({
               className="professionals__arrow"
             />
           </Link>
-          {windowHeight > 600 &&
+          {windowHeight > 720 &&
             <FormBlock>
               <OrderForm
                 onOrderSubmit={onOrderSubmit}

@@ -1,4 +1,16 @@
 .slider__container {
-  max-width: 800px;
+  max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 600px) {
+  .slider__container {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider__container {
+    max-width: 800px;
+  }
 }

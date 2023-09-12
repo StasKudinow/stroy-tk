@@ -1,0 +1,14 @@
+.footer__address {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  gap: 15px;
+}
+
+@media (min-width: 600px) {
+  .footer__address {
+    max-width: 500px;
+  }
+}

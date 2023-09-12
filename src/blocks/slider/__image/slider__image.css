@@ -1,4 +1,16 @@
 .slider__image {
-  max-width: 200px;
-  max-height: 100px;
+  max-width: 300px;
+  max-height: auto;
+}
+
+@media (min-width: 600px) {
+  .slider__image {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider__image {
+    max-width: 200px;
+  }
 }

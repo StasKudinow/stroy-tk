@@ -18,7 +18,15 @@ function Slider({ workSlides, partnersSlides }) {
     <Swiper
       className="slider__container"
       modules={[Navigation, Pagination, Autoplay]}
-      slidesPerView={workSlides ? 1 : 3}
+      slidesPerView={1}
+      breakpoints={partnersSlides && {
+        600: {
+          slidesPerView: 2
+        },
+        960: {
+          slidesPerView: 3
+        }
+      }}
       navigation={workSlides && true}
       pagination={workSlides && pagination}
       spaceBetween={partnersSlides && 50}

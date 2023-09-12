@@ -1,9 +1,17 @@
 .work__title {
-  margin: 250px 0 150px;
-  font-size: 18px;
+  width: 300px;
+  margin: 100px 0 ;
+  font-size: 20px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: normal;
   letter-spacing: 0.3rem;
+  text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+@media (min-width: 960px) {
+  .work__title {
+    width: 100%;
+  }
 }

@@ -18,11 +18,11 @@ function LeftPanel({ showAnimate }) {
         >
           <hr className="left-panel__line" />
           <div className="left-panel__icon-container">
-            {socials.map((social) => {
+            {socials.map((link) => {
               return <SocialIcon
-                key={social.name}
-                name={social.name}
-                href={social.href}
+                key={link.name}
+                name={link.name}
+                href={link.href}
               />
             })}
           </div>

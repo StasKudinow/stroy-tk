@@ -1,7 +1,21 @@
 .slider__slide {
-  margin: 0 150px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 26px;
+}
+
+@media (min-width: 600px) {
+  .slider__slide {
+    margin: 0 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider__slide {
+    margin: 0 150px;
+    flex-direction: row;
+  }
 }

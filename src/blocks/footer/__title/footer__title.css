@@ -1,13 +1,27 @@
 .footer__title {
-  max-width: 400px;
-  margin: 0;
-  font-size: 18px;
+  max-width: 300px;
+  margin: 0 15px;
+  font-size: 14px;
   font-weight: 300;
-  line-height: 24px;
+  line-height: normal;
   letter-spacing: 0.3rem;
   text-align: center;
   color: #FFFFFF;
   text-transform: uppercase;
   align-self: center;
   justify-self: center;
+}
+
+@media (min-width: 600px) {
+  .footer__title {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__title {
+    margin-left: 90px;
+    font-size: 18px;
+    text-align: left;
+  }
 }

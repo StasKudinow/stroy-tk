@@ -1,12 +1,26 @@
 .footer__text {
-  max-width: 500px;
-  margin: 0 0 150px;
+  max-width: 300px;
+  margin: 0 15px;
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   line-height: normal;
   text-align: center;
   text-transform: uppercase;
   align-self: center;
   justify-self: center;
+}
+
+@media (min-width: 600px) {
+  .footer__text {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__text {
+    margin-right: 90px;
+    font-size: 18px;
+    text-align: left;
+  }
 }
