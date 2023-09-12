@@ -13,6 +13,6 @@
 
 @media (min-width: 1600px) {
   .services-card {
-    height: 100vh;
+    min-height: 100vh;
   }
 }
