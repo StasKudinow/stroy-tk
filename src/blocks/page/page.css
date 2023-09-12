@@ -3,7 +3,12 @@
   min-width: 320px;
   min-height: 100vh;
   margin: 0 auto;
-  background-color: #000;
+  padding:
+    env(safe-area-inset-top, 15px)
+    env(safe-area-inset-right, 15px)
+    env(safe-area-inset-bottom, 15px)
+    env(safe-area-inset-left, 15px);
+  background-color: #000000;
   position: relative;
   font-family: "OpenSans", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;

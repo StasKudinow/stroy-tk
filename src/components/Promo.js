@@ -5,11 +5,14 @@ import FormBlock from './FormBlock'
 import Discount from './Discount'
 
 
-function Promo({ onOpenPopup }) {
+function Promo({
+  onOpenPopup,
+  isLaptop
+}) {
 
   return (
     <motion.section
-      initial="hidden"
+      initial={isLaptop && 'hidden'}
       whileInView="visible"
       viewport={{ amount: 0.6 }}
       className="promo"

@@ -12,6 +12,7 @@ import OrderForm from './OrderForm'
 
 function Professionals({
   onOrderSubmit,
+  isLaptop,
   isTablet
 }) {
 
@@ -19,7 +20,7 @@ function Professionals({
     <section className="professionals">
       <motion.div
         className="professionals__wrapper"
-        initial={isTablet && 'hidden'}
+        initial={isLaptop && 'hidden'}
         whileInView="visible"
         viewport={{ amount: 0.6 }}
       >

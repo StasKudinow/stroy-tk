@@ -1,6 +1,6 @@
 .popup__close-button {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   padding: 0;
   background-image: url(../../../images/close-button-white.svg);
   background-size: cover;
@@ -15,11 +15,4 @@
 .popup__close-button:hover {
   cursor: pointer;
   background-image: url(../../../images/close-button-gold.svg);
-}
-
-@media (min-width: 768px) {
-  .popup__close-button {
-    width: 30px;
-    height: 30px;
-  }
 }

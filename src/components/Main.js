@@ -51,6 +51,7 @@ function Main({
       <Element name="promo">
         <Promo
           onOpenPopup={onOpenPopup}
+          isLaptop={isLaptop}
         />
       </Element>
 
@@ -58,6 +59,7 @@ function Main({
         <Professionals
           onOrderSubmit={onOrderSubmit}
           isTablet={isTablet}
+          isLaptop={isLaptop}
         />
       </Element>
 

@@ -1,9 +1,14 @@
 function Logo({ onClosePopup }) {
 
+  function handleClick() {
+    document.getElementById('promo')?.scrollIntoView()
+    onClosePopup()
+  }
+
   return (
-    <a href="#promo" onClick={onClosePopup}>
+    <button onClick={handleClick} type="button">
       <div className="logo" />
-    </a>
+    </button>
   )
 }
 
