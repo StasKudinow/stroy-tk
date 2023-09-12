@@ -1,9 +1,10 @@
 .about__button {
+  max-width: 300px;
+  margin-bottom: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  align-self: flex-start;
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.4rem;
@@ -15,4 +16,24 @@
 
 .about__button:hover {
   opacity: 0.4;
+}
+
+@media (min-width: 600px) {
+  .about__button {
+    max-width: 600px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 960px) {
+  .about__button {
+    max-width: 900px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .about__button {
+    align-self: flex-start;
+  }
 }

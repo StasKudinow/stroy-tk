@@ -1,7 +1,19 @@
 .about__content {
-  margin: 150px 100px 0 0;
+  margin: 0 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 20px;
+}
+
+@media (min-width: 960px) {
+  .about__content {
+    gap: 50px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .about__content {
+    margin: 150px 100px 0 0;
+  }
 }

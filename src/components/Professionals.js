@@ -4,7 +4,8 @@ import { motion } from 'framer-motion'
 import {
   professionalsTitleVariants,
   professionalsTextVariants,
-  professionalsBtnVariants
+  professionalsBtnVariants,
+  WINDOW_HEIGHT
 } from '../utils/constants'
 
 import FormBlock from './FormBlock'
@@ -14,8 +15,6 @@ function Professionals({
   onOrderSubmit,
   isTablet
 }) {
-
-  const windowHeight = document.documentElement.clientHeight
 
   return (
     <section className="professionals">
@@ -95,7 +94,7 @@ function Professionals({
               className="professionals__arrow"
             />
           </Link>
-          {windowHeight > 720 &&
+          {WINDOW_HEIGHT > 720 &&
             <FormBlock>
               <OrderForm
                 onOrderSubmit={onOrderSubmit}
