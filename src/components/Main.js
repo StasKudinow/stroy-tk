@@ -42,9 +42,8 @@ function Main({
       }
 
       <Header
-        showAnimate={showAnimate}
+        showAnimate={isLaptop && showAnimate}
         onOpenPopup={onOpenPopup}
-        isLaptop={isLaptop}
         isTablet={isTablet}
         isMobile={isMobile}
       />

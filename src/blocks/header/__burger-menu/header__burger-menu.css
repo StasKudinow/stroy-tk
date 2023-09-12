@@ -1,6 +1,7 @@
 .header__burger-menu {
   width: 30px;
   height: 15px;
+  padding: 10px;
   border: none;
   background-color: rgba(255, 255, 255, 0);
   background-image: url(../../../images/header-burger.svg);

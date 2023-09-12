@@ -9,12 +9,6 @@
   transition: all 0.3s ease;
 }
 
-@media (min-width: 768px) {
-  .services-card__title {
-    font-size: 20px;
-  }
-}
-
 @media (min-width: 1600px) {
   .services-card__title {
     font-size: 24px;

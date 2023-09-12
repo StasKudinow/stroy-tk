@@ -7,7 +7,6 @@ import { headerVariants, navLinks } from '../utils/constants'
 function Header({
   showAnimate,
   onOpenPopup,
-  isLaptop,
   isTablet,
   isMobile
 }) {
@@ -19,7 +18,7 @@ function Header({
       <AnimatePresence>
         {showAnimate &&
           <motion.div
-            initial={!isLaptop && 'hidden'}
+            initial="hidden"
             animate="visible"
             exit="closed"
             variants={headerVariants}

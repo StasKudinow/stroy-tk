@@ -239,4 +239,3 @@ export const professionalsBtnVariants = {
 
 // constants
 export const COLOR_WHITE = { color: '#FFFFFF' }
-export const WINDOW_HEIGHT = document.documentElement.clientHeight

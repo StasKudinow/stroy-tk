@@ -4,8 +4,7 @@ import { motion } from 'framer-motion'
 import {
   professionalsTitleVariants,
   professionalsTextVariants,
-  professionalsBtnVariants,
-  WINDOW_HEIGHT
+  professionalsBtnVariants
 } from '../utils/constants'
 
 import FormBlock from './FormBlock'
@@ -94,14 +93,12 @@ function Professionals({
               className="professionals__arrow"
             />
           </Link>
-          {WINDOW_HEIGHT > 720 &&
-            <FormBlock>
-              <OrderForm
-                onOrderSubmit={onOrderSubmit}
-                btnText="Обсудить проект"
-              />
-            </FormBlock>
-          }
+          <FormBlock>
+            <OrderForm
+              onOrderSubmit={onOrderSubmit}
+              btnText="Обсудить проект"
+            />
+          </FormBlock>
         </div>
       </motion.div>
     </section>
