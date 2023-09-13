@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/stroy-tk/static/css/main.deca1fd3.css",
-    "main.js": "/stroy-tk/static/js/main.ef818e53.js",
+    "main.css": "/stroy-tk/static/css/main.244d2763.css",
+    "main.js": "/stroy-tk/static/js/main.2893ab28.js",
     "static/js/787.c09628ce.chunk.js": "/stroy-tk/static/js/787.c09628ce.chunk.js",
     "static/media/services-image-5.png": "/stroy-tk/static/media/services-image-5.4aba9c9bd54cbd9ab749.png",
     "static/media/services-image-2.png": "/stroy-tk/static/media/services-image-2.17037c5fa2c9e9d351dd.png",
@@ -50,12 +50,12 @@
     "static/media/header-burger.svg": "/stroy-tk/static/media/header-burger.ca7a7617227759254717.svg",
     "static/media/arrow.svg": "/stroy-tk/static/media/arrow.2c27f0ece5ebff24a2de.svg",
     "static/media/arrow-gold.svg": "/stroy-tk/static/media/arrow-gold.9822a9e6681aefbbce67.svg",
-    "main.deca1fd3.css.map": "/stroy-tk/static/css/main.deca1fd3.css.map",
-    "main.ef818e53.js.map": "/stroy-tk/static/js/main.ef818e53.js.map",
+    "main.244d2763.css.map": "/stroy-tk/static/css/main.244d2763.css.map",
+    "main.2893ab28.js.map": "/stroy-tk/static/js/main.2893ab28.js.map",
     "787.c09628ce.chunk.js.map": "/stroy-tk/static/js/787.c09628ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.deca1fd3.css",
-    "static/js/main.ef818e53.js"
+    "static/css/main.244d2763.css",
+    "static/js/main.2893ab28.js"
   ]
 }
