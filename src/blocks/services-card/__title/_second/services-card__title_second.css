@@ -8,7 +8,7 @@
   cursor: default;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .services-card__title_second {
     max-width: 550px;
     margin: 80px 0;

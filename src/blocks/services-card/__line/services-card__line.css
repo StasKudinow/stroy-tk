@@ -1,8 +1,15 @@
 .services-card__line {
   width: 2px;
   height: 100vh;
+  display: none;
   background-image: url(../../../images/services-line.svg);
   position: absolute;
   top: 0;
   right: 0;
+}
+
+@media (min-width: 1600px) {
+  .services-card__line {
+    display: block;
+  }
 }

@@ -9,7 +9,6 @@ function ServecesCard({
   onClickCard,
   onClose,
   isActiveCard,
-  isDesktop
 }) {
 
   return (
@@ -43,22 +42,13 @@ function ServecesCard({
                 <div className="services-card__button-arrow services-card__button-arrow_second" />
               </button>
               <button className="services-card__close-button" type="button" onClick={onClose} />
-              </motion.div>
-              :
-              <motion.h2
-                initial="hidden"
-                animate="visible"
-                exit="closed"
-                variants={servecesCardVariants}
-                className="services-card__title"
-                onClick={onClickCard}
-              >
-                {title}
-              </motion.h2>
-            }
-          </AnimatePresence>
+            </motion.div>
+          :
+            <div className="services-card__title" onClick={onClickCard}>{title}</div>
+          }
+        </AnimatePresence>
       </div>
-      {isDesktop && <div className="services-card__line" />}
+      <div className="services-card__line" />
     </div>
   )
 }

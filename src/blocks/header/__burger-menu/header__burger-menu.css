@@ -12,5 +12,4 @@
 
 .header__burger-menu:hover {
   cursor: pointer;
-  background-image: url(../../../images/header-burger-gold.svg);
 }

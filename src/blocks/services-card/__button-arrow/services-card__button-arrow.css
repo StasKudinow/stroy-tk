@@ -7,7 +7,7 @@
   transition: all 0.3s ease;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .form-button__arrow {
     width: 115px;
   }

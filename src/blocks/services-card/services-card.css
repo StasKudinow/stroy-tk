@@ -16,3 +16,9 @@
     min-height: 100vh;
   }
 }
+
+@media (pointer:coarse) {
+  .services-card:hover .services-card__title {
+    color: #FFFFFF;
+  }
+}

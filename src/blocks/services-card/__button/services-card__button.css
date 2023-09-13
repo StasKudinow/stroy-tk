@@ -21,7 +21,7 @@
   opacity: 0.6;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .services-card__button {
     margin: 0 0 40px;
     font-size: 18px;

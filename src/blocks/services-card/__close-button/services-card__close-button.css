@@ -1,6 +1,6 @@
 .services-card__close-button {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   background-image: url(../../../images/close-button-white.svg);
   background-size: cover;
@@ -17,8 +17,10 @@
   background-image: url(../../../images/close-button-gold.svg);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .services-card__close-button {
+    width: 30px;
+    height: 30px;
     top: 35px;
     right: -35px;
   }

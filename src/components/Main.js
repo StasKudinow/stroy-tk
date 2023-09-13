@@ -19,10 +19,9 @@ function Main({
   onOrderSubmit
 }) {
 
-  const isDesktop = useMediaQuery({ query: '(min-width: 1440px)' })
-  const isLaptop = useMediaQuery({ query: '(min-width: 1024px)' })
-  const isTablet = useMediaQuery({ query: '(min-width: 768px)' })
   const isMobile = useMediaQuery({ query: '(min-width: 600px)' })
+  const isTablet = useMediaQuery({ query: '(min-width: 768px)' })
+  const isLaptop = useMediaQuery({ query: '(min-width: 1024px)' })
 
   return (
     <main>
@@ -64,9 +63,7 @@ function Main({
       </Element>
 
       <Element name="serveces">
-        <Serveces
-          isDesktop={isDesktop}
-        />
+        <Serveces />
       </Element>
 
       <Element name="how-we-work">
