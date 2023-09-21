@@ -1,0 +1,12 @@
+.preloader__cube2 {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+  -webkit-animation-delay: -0.9s;
+  animation: sk-cubemove 1.8s infinite ease-in-out;
+  animation-delay: -0.9s;
+}

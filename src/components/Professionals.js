@@ -12,6 +12,7 @@ import OrderForm from './OrderForm'
 
 function Professionals({
   onOrderSubmit,
+  onLoading,
   isLaptop,
   isTablet
 }) {
@@ -97,6 +98,7 @@ function Professionals({
           <FormBlock>
             <OrderForm
               onOrderSubmit={onOrderSubmit}
+              onLoading={onLoading}
               btnText="Обсудить проект"
             />
           </FormBlock>

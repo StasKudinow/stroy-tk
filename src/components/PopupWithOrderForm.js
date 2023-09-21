@@ -6,7 +6,8 @@ import { COLOR_WHITE } from '../utils/constants'
 function PopupWithOrderForm({
   isOpen,
   onClosePopup,
-  onOrderSubmit
+  onOrderSubmit,
+  onLoading
 }) {
 
   return (
@@ -15,8 +16,9 @@ function PopupWithOrderForm({
       onClosePopup={onClosePopup}
     >
       <OrderForm
-        inputTextColor={COLOR_WHITE}
         onOrderSubmit={onOrderSubmit}
+        onLoading={onLoading}
+        inputTextColor={COLOR_WHITE}
         btnText="Заказать звонок"
       />
     </Popup>

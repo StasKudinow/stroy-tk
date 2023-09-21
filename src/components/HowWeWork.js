@@ -4,7 +4,10 @@ import OrderForm from './OrderForm'
 
 import { workSlides } from '../utils/constants'
 
-function HowWeWork({ onOrderSubmit }) {
+function HowWeWork({
+  onOrderSubmit,
+  onLoading
+}) {
 
   return (
     <section className="work">
@@ -14,6 +17,7 @@ function HowWeWork({ onOrderSubmit }) {
         <FormBlock>
           <OrderForm
             onOrderSubmit={onOrderSubmit}
+            onLoading={onLoading}
             btnText="Обсудить проект"
           />
         </FormBlock>

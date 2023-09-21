@@ -16,7 +16,8 @@ function Main({
   showAnimate,
   onOpenPopup,
   onClosePopup,
-  onOrderSubmit
+  onOrderSubmit,
+  onLoading
 }) {
 
   const isMobile = useMediaQuery({ query: '(min-width: 600px)' })
@@ -57,6 +58,7 @@ function Main({
       <Element name="professionals">
         <Professionals
           onOrderSubmit={onOrderSubmit}
+          onLoading={onLoading}
           isTablet={isTablet}
           isLaptop={isLaptop}
         />
@@ -69,6 +71,7 @@ function Main({
       <Element name="how-we-work">
         <HowWeWork
           onOrderSubmit={onOrderSubmit}
+          onLoading={onLoading}
         />
       </Element>
 
@@ -79,6 +82,7 @@ function Main({
       <Element name="footer">
         <Footer
           onOrderSubmit={onOrderSubmit}
+          onLoading={onLoading}
           isLaptop={isLaptop}
         />
       </Element>

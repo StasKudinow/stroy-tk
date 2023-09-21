@@ -5,6 +5,7 @@ import { COLOR_WHITE, socials } from '../utils/constants'
 
 function Footer({
   onOrderSubmit,
+  onLoading,
   isLaptop
 }) {
 
@@ -14,8 +15,9 @@ function Footer({
         <h2 className="footer__title">Остались вопросы? Задайте их нам напрямую</h2>
         <div className="footer__form-block">
           <OrderForm
-            inputTextColor={COLOR_WHITE}
             onOrderSubmit={onOrderSubmit}
+            onLoading={onLoading}
+            inputTextColor={COLOR_WHITE}
             btnText="Обсудить проект"
           />
         </div>

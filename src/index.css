@@ -1,5 +1,6 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
+@import url(./blocks/keyframes/keyframes.css);
 @import url(./blocks/page/page.css);
 @import url(./blocks/logo/logo.css);
 @import url(./blocks/logo/__image/logo__image.css);
@@ -118,3 +119,6 @@
 @import url(./blocks/about/__text/about__text.css);
 @import url(./blocks/about/__button/about__button.css);
 @import url(./blocks/about/__arrow/about__arrow.css);
+@import url(./blocks/preloader/preloader.css);
+@import url(./blocks/preloader/__cube1/preloader__cube1.css);
+@import url(./blocks/preloader/__cube2/preloader__cube2.css);

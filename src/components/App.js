@@ -5,6 +5,7 @@ import Main from './Main'
 import About from './About'
 import PopupWithOrderForm from './PopupWithOrderForm'
 import PopupWithThanks from './PopupWithThanks'
+import Preloader from './Preloader'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
   const [lastScrollY, setLastScrpllY] = useState(0)
   const [isPopupWithOrderFormOpen, setIsPopupWithOrderFormOpen] = useState(false)
   const [isPopupWithThanksOpen, setIsPopupWithThanksOpen] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,6 +58,7 @@ function App() {
             onOpenPopup={handleOrderCallButton}
             onClosePopup={closeAllPopups}
             onOrderSubmit={handleOrderSubmit}
+            onLoading={setIsLoading}
           />
         } />
 
@@ -68,11 +71,16 @@ function App() {
         isOpen={isPopupWithOrderFormOpen}
         onClosePopup={closeAllPopups}
         onOrderSubmit={handleOrderSubmit}
+        onLoading={setIsLoading}
       />
 
       <PopupWithThanks
         isOpen={isPopupWithThanksOpen}
         onClosePopup={closeAllPopups}
+      />
+
+      <Preloader
+        isLoading={isLoading}
       />
     </div>
   )

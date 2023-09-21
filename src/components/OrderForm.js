@@ -6,8 +6,9 @@ import FormButton from './FormButton'
 import { validateName, validatePhone } from '../utils/validation'
 
 function OrderForm({
-  inputTextColor,
   onOrderSubmit,
+  onLoading,
+  inputTextColor,
   btnText
 }) {
 
@@ -18,12 +19,16 @@ function OrderForm({
     // eslint-disable-next-line no-restricted-globals
     const result = confirm('Отправить форму?')
     if (result) {
+      onLoading(true)
       emailjs.sendForm('service_j2akzgt', 'template_stpxspy', form.current, '5mBhizRVj0aYujetT')
         .then(() => {
           onOrderSubmit()
         })
         .catch((err) => {
           console.log(err)
+        })
+        .finally(() => {
+          onLoading(false)
         })
     }
   }
@@ -35,7 +40,7 @@ function OrderForm({
           name: '',
           phone: '',
         }}
-        onSubmit={(actions) => {
+        onSubmit={(values, actions) => {
           handleSubmit()
           actions.resetForm()
         }}
