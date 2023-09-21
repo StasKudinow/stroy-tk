@@ -41,8 +41,7 @@ function App() {
     setIsPopupWithThanksOpen(false)
   }
 
-  function handleOrderSubmit(values) {
-    console.log('Имя:', values.name, 'Телефон:', values.phone)
+  function handleOrderSubmit() {
     closeAllPopups()
     setIsPopupWithThanksOpen(true)
   }

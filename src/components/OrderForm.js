@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Formik, Form, Field } from 'formik'
+import emailjs from '@emailjs/browser'
 
 import FormButton from './FormButton'
 import { validateName, validatePhone } from '../utils/validation'
@@ -11,6 +12,21 @@ function OrderForm({
 }) {
 
   const [disabled, setDisabled] = useState(false)
+  const form = useRef()
+
+  function handleSubmit() {
+    // eslint-disable-next-line no-restricted-globals
+    const result = confirm('Отправить форму?')
+    if (result) {
+      emailjs.sendForm('service_j2akzgt', 'template_stpxspy', form.current, '5mBhizRVj0aYujetT')
+        .then(() => {
+          onOrderSubmit()
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    }
+  }
 
   return (
     <div className="order-form">
@@ -19,14 +35,20 @@ function OrderForm({
           name: '',
           phone: '',
         }}
-        onSubmit={(values, {resetForm}) => {
-          onOrderSubmit(values)
-          resetForm()
+        onSubmit={(actions) => {
+          handleSubmit()
+          actions.resetForm()
         }}
         validateOnMount
       >
-        {({ errors, touched, handleChange, values, isValid }) => (
-          <Form noValidate>
+        {({
+          errors,
+          touched,
+          handleChange,
+          values,
+          isValid
+        }) => (
+          <Form ref={form} noValidate>
             <Field
               className={`order-form__field ${errors.name && touched.name ? 'order-form__field_error' : ''}`}
               style={inputTextColor ? inputTextColor : {color: '#000000'}}
