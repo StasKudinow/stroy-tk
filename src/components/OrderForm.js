@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useRef } from 'react'
 import { Formik, Form, Field } from 'formik'
 import emailjs from '@emailjs/browser'
 
@@ -12,7 +12,6 @@ function OrderForm({
   btnText
 }) {
 
-  const [disabled, setDisabled] = useState(false)
   const form = useRef()
 
   function handleSubmit() {
@@ -90,8 +89,7 @@ function OrderForm({
               text={btnText}
               type="submit"
               handler="null"
-              disabled={disabled}
-              onDisabled={!isValid ? setDisabled(true) : setDisabled(false)}
+              disabled={isValid ? false : true}
             />
           </Form>
         )}
