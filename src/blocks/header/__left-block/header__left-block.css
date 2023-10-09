@@ -2,5 +2,11 @@
   padding-left: 10px;
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 30px;
+}
+
+@media (min-width: 600px) {
+  .header__left-block {
+    gap: 100px;
+  }
 }

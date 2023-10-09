@@ -1,0 +1,11 @@
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (min-width: 600px) {
+  .header__contacts {
+    gap: 10px;
+  }
+}

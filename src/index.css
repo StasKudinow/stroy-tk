@@ -3,6 +3,7 @@
 @import url(./blocks/keyframes/keyframes.css);
 @import url(./blocks/page/page.css);
 @import url(./blocks/logo/logo.css);
+@import url(./blocks/logo/__wrapper/logo__wrapper.css);
 @import url(./blocks/logo/__image/logo__image.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__container/header__container.css);
@@ -10,7 +11,9 @@
 @import url(./blocks/header/__left-block/header__left-block.css);
 @import url(./blocks/header/__burger-menu/header__burger-menu.css);
 @import url(./blocks/header/__burger-menu/_active/header__burger-menu_active.css);
-@import url(./blocks/header/__number/header__number.css);
+@import url(./blocks/header/__contacts/header__contacts.css);
+@import url(./blocks/header/__phone/header__number.css);
+@import url(./blocks/header/__email/header__email.css);
 @import url(./blocks/header/__right-block/header__right-block.css);
 @import url(./blocks/header/__call-text/header__call-text.css);
 @import url(./blocks/header/__call-button/header__call-button.css);
@@ -43,7 +46,7 @@
 @import url(./blocks/professionals/__item-title/professionals__item-title.css);
 @import url(./blocks/professionals/__item-text/professionals__item-text.css);
 @import url(./blocks/professionals/__line/professionals__line.css);
-@import url(./blocks/professionals/__button-container/professionals__button-container.css);
+@import url(./blocks/professionals/__bottom-content/professionals__bottom-content.css);
 @import url(./blocks/professionals/__button/professionals__button.css);
 @import url(./blocks/professionals/__arrow/professionals__arrow.css);
 @import url(./blocks/services/services.css);

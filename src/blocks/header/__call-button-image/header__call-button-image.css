@@ -1,6 +1,13 @@
 .header__call-button-image {
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   background-image: url(../../../images/phone-icon.svg);
   background-size: cover;
+}
+
+@media (min-width: 600px) {
+  .header__call-button-image {
+    width: 20px;
+    height: 20px;
+  }
 }

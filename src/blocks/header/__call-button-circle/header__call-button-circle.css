@@ -1,10 +1,17 @@
 .header__call-button-circle {
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.3s ease;
+}
+
+@media (min-width: 600px) {
+  .header__call-button-circle {
+    width: 40px;
+    height: 40px;
+  }
 }

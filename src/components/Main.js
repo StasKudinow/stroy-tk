@@ -14,22 +14,24 @@ import Footer from './Footer'
 
 function Main({
   showAnimate,
+  onShowAnimate,
   onOpenPopup,
   onClosePopup,
   onOrderSubmit,
   onLoading
 }) {
 
-  const isMobile = useMediaQuery({ query: '(min-width: 600px)' })
   const isTablet = useMediaQuery({ query: '(min-width: 768px)' })
   const isLaptop = useMediaQuery({ query: '(min-width: 1024px)' })
 
   return (
     <main>
       {isTablet &&
-        <Logo
-          onClosePopup={onClosePopup}
-        />
+        <div className="logo__wrapper">
+          <Logo
+            onClosePopup={onClosePopup}
+          />
+        </div>
       }
 
       {isLaptop &&
@@ -44,8 +46,8 @@ function Main({
       <Header
         showAnimate={showAnimate}
         onOpenPopup={onOpenPopup}
+        onClosePopup={onClosePopup}
         isTablet={isTablet}
-        isMobile={isMobile}
       />
 
       <Element name="promo">

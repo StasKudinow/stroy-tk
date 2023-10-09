@@ -174,6 +174,18 @@ export const headerVariants = {
   }
 }
 
+// export const headerVariantsTablet = {
+//   hidden: {
+//     y: 0,
+//   },
+//   visible: {
+//     y: 0,
+//   },
+//   closed: {
+//     y: 0,
+//   }
+// }
+
 export const leftPanelVariants = {
   hidden: {
     x: -100,
@@ -214,21 +226,6 @@ export const professionalsTextVariants = {
   },
   visible: custom => ({
     y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.3,
-      delay: custom * 0.2
-    }
-  })
-}
-
-export const professionalsBtnVariants = {
-  hidden: {
-    x: -80,
-    opacity: 0,
-  },
-  visible: custom => ({
-    x: 0,
     opacity: 1,
     transition: {
       duration: 0.3,

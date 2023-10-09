@@ -1,0 +1,14 @@
+.header__phone {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 10%;
+  color: #FFFFFF;
+}
+
+@media (min-width: 600px) {
+  .header__phone {
+    font-size: 14px;
+  }
+}

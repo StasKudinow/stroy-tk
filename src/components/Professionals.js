@@ -1,11 +1,7 @@
 import { Link } from 'react-router-dom'
 
 import { motion } from 'framer-motion'
-import {
-  professionalsTitleVariants,
-  professionalsTextVariants,
-  professionalsBtnVariants
-} from '../utils/constants'
+import { professionalsTitleVariants, professionalsTextVariants } from '../utils/constants'
 
 import FormBlock from './FormBlock'
 import OrderForm from './OrderForm'
@@ -80,20 +76,11 @@ function Professionals({
             </div>
           </div>
         </div>
-        <div className="professionals__button-container">
+        <div className="professionals__bottom-content">
           <div />
           <Link to="/about" className="professionals__button">
-            <motion.p
-              variants={professionalsBtnVariants}
-              custom={5}
-            >
-              подробнее о нас
-            </motion.p>
-            <motion.div
-              variants={professionalsBtnVariants}
-              custom={4}
-              className="professionals__arrow"
-            />
+            <p>подробнее о нас</p>
+            <div className="professionals__arrow" />
           </Link>
           <FormBlock>
             <OrderForm
