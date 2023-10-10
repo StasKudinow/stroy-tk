@@ -89,6 +89,9 @@
 @import url(./blocks/footer/__address/footer__address.css);
 @import url(./blocks/footer/__address-text/footer__address-text.css);
 @import url(./blocks/footer/__links/footer__links.css);
+@import url(./blocks/footer/__license/footer__license.css);
+@import url(./blocks/footer/__license-text/footer__license-text.css);
+@import url(./blocks/footer/__license-link/footer__license-link.css);
 @import url(./blocks/form-block/form-block.css);
 @import url(./blocks/form-block/form-block__overlay/form-block__overlay.css);
 @import url(./blocks/discount/discount.css);

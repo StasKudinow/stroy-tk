@@ -77,7 +77,6 @@ function Professionals({
           </div>
         </div>
         <div className="professionals__bottom-content">
-          <div />
           <Link to="/about" className="professionals__button">
             <p>подробнее о нас</p>
             <div className="professionals__arrow" />

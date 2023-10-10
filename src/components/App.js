@@ -65,6 +65,10 @@ function App() {
         <Route path="/about" element={
           <About />
         } />
+
+        <Route path="/license" element={
+          <About />
+        } />
       </Routes>
 
       <PopupWithOrderForm
