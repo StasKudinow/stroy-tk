@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/stroy-tk/static/css/main.b814490e.css",
-    "main.js": "/stroy-tk/static/js/main.9ddead53.js",
+    "main.css": "/stroy-tk/static/css/main.3e76499d.css",
+    "main.js": "/stroy-tk/static/js/main.c169fcbb.js",
     "static/js/787.c09628ce.chunk.js": "/stroy-tk/static/js/787.c09628ce.chunk.js",
     "static/media/services-image-5.png": "/stroy-tk/static/media/services-image-5.4aba9c9bd54cbd9ab749.png",
     "static/media/services-image-2.png": "/stroy-tk/static/media/services-image-2.17037c5fa2c9e9d351dd.png",
@@ -29,12 +29,12 @@
     "static/media/partners-uralsib.png": "/stroy-tk/static/media/partners-uralsib.ef2dfe8cd1e393767445.png",
     "static/media/partners-okey.png": "/stroy-tk/static/media/partners-okey.e6cd551ff282a2ffc859.png",
     "static/media/partners-rzd.png": "/stroy-tk/static/media/partners-rzd.489f9d1e2c8ef5c14940.png",
+    "static/media/logo.svg": "/stroy-tk/static/media/logo.d9b457ac0437cfcd8d75.svg",
     "static/media/work-icon-4.svg": "/stroy-tk/static/media/work-icon-4.82af20aa79ba936bfc33.svg",
     "static/media/work-icon-2.svg": "/stroy-tk/static/media/work-icon-2.9ed0a2289054746c3df8.svg",
     "static/media/social-icon-insta.svg": "/stroy-tk/static/media/social-icon-insta.8e8a79dc2847337e9530.svg",
     "static/media/work-icon-3.svg": "/stroy-tk/static/media/work-icon-3.8cb46a1213a4c311e32c.svg",
     "static/media/phone-icon.svg": "/stroy-tk/static/media/phone-icon.3a522a57d84b7e5a7a51.svg",
-    "static/media/logo.svg": "/stroy-tk/static/media/logo.72e410ce4e43177baaf3.svg",
     "static/media/social-icon-youtube.svg": "/stroy-tk/static/media/social-icon-youtube.9fa773bbb5b94e80ad09.svg",
     "static/media/social-icon-vk.svg": "/stroy-tk/static/media/social-icon-vk.a7c1a217f39f4c0ecf42.svg",
     "static/media/work-icon-6.svg": "/stroy-tk/static/media/work-icon-6.bb1bdd7186345357668e.svg",
@@ -50,12 +50,12 @@
     "static/media/header-burger.svg": "/stroy-tk/static/media/header-burger.ca7a7617227759254717.svg",
     "static/media/arrow.svg": "/stroy-tk/static/media/arrow.2c27f0ece5ebff24a2de.svg",
     "static/media/arrow-gold.svg": "/stroy-tk/static/media/arrow-gold.9822a9e6681aefbbce67.svg",
-    "main.b814490e.css.map": "/stroy-tk/static/css/main.b814490e.css.map",
-    "main.9ddead53.js.map": "/stroy-tk/static/js/main.9ddead53.js.map",
+    "main.3e76499d.css.map": "/stroy-tk/static/css/main.3e76499d.css.map",
+    "main.c169fcbb.js.map": "/stroy-tk/static/js/main.c169fcbb.js.map",
     "787.c09628ce.chunk.js.map": "/stroy-tk/static/js/787.c09628ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b814490e.css",
-    "static/js/main.9ddead53.js"
+    "static/css/main.3e76499d.css",
+    "static/js/main.c169fcbb.js"
   ]
 }
