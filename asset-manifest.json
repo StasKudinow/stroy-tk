@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/stroy-tk/static/css/main.ac83a936.css",
-    "main.js": "/stroy-tk/static/js/main.701181ba.js",
+    "main.js": "/stroy-tk/static/js/main.39c81d99.js",
     "static/js/787.c09628ce.chunk.js": "/stroy-tk/static/js/787.c09628ce.chunk.js",
     "static/media/services-image-5.png": "/stroy-tk/static/media/services-image-5.4aba9c9bd54cbd9ab749.png",
     "static/media/services-image-2.png": "/stroy-tk/static/media/services-image-2.17037c5fa2c9e9d351dd.png",
@@ -51,11 +51,11 @@
     "static/media/arrow.svg": "/stroy-tk/static/media/arrow.2c27f0ece5ebff24a2de.svg",
     "static/media/arrow-gold.svg": "/stroy-tk/static/media/arrow-gold.9822a9e6681aefbbce67.svg",
     "main.ac83a936.css.map": "/stroy-tk/static/css/main.ac83a936.css.map",
-    "main.701181ba.js.map": "/stroy-tk/static/js/main.701181ba.js.map",
+    "main.39c81d99.js.map": "/stroy-tk/static/js/main.39c81d99.js.map",
     "787.c09628ce.chunk.js.map": "/stroy-tk/static/js/787.c09628ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac83a936.css",
-    "static/js/main.701181ba.js"
+    "static/js/main.39c81d99.js"
   ]
 }
