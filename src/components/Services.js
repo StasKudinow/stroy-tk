@@ -1,15 +1,15 @@
 import { useState } from 'react'
-import { servecesCards } from '../utils/constants'
+import { servicesCards } from '../utils/constants'
 
-import ServecesCard from './ServecesCard'
+import ServicesCard from './ServicesCard'
 
-function Serveces({ isDesktop }) {
+function Services() {
 
-  const [cards, setCards] = useState(servecesCards)
+  const [cards, setCards] = useState(servicesCards)
   const [isActiveCard, setIsActiveCard] = useState(null)
 
   function filterCards(id) {
-    setCards(servecesCards.filter((el) => el.id === id))
+    setCards(servicesCards.filter((el) => el.id === id))
   }
 
   function handleCardClick(el, id) {
@@ -22,7 +22,7 @@ function Serveces({ isDesktop }) {
   function handleCloseCard() {
     if (isActiveCard) {
       setIsActiveCard(null)
-      setCards(servecesCards)
+      setCards(servicesCards)
     }
   }
 
@@ -30,16 +30,16 @@ function Serveces({ isDesktop }) {
     <section className="services">
       <div className={`services__container ${isActiveCard ? 'services__container_active' : ''}`}>
         {cards.map((card) => {
-          return <ServecesCard
+          return <ServicesCard
             key={card.id}
             card={card}
             src={card.id}
+            path={card.path}
             title={card.title}
             text={card.text}
             onClickCard={() => handleCardClick(card, card.id)}
             onClose={handleCloseCard}
             isActiveCard={isActiveCard}
-            isDesktop={isDesktop}
           />
         })}
       </div>
@@ -47,4 +47,4 @@ function Serveces({ isDesktop }) {
   )
 }
 
-export default Serveces
+export default Services

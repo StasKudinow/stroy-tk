@@ -1,0 +1,16 @@
+.service-list__title {
+  max-width: 350px;
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFAC30;
+}
+
+@media (min-width: 600px) {
+  .service-list__title {
+    font-size: 30px;
+  }
+}

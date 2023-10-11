@@ -9,7 +9,6 @@ import { headerVariants, navLinks } from '../utils/constants'
 function Header({
   showAnimate,
   onOpenPopup,
-  onClosePopup,
   isTablet,
 }) {
 
@@ -95,9 +94,7 @@ function Header({
                 </a>
               </div>
             </div>
-            <Logo
-              onClosePopup={onClosePopup}
-            />
+            <Logo />
             <div className="header__right-block">
               <button
                 className="header__call-button"

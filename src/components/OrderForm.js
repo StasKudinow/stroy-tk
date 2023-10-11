@@ -3,7 +3,16 @@ import { Formik, Form, Field } from 'formik'
 import emailjs from '@emailjs/browser'
 
 import FormButton from './FormButton'
-import { validateName, validatePhone } from '../utils/validation'
+import {
+  validateName,
+  validatePhone,
+  validateEmail
+} from '../utils/validation'
+import {
+  EMAILJS_SERVICE_ID,
+  EMAILJS_TEMPLATE_ID,
+  EMAILJS_PUBLIC_KEY
+} from '../utils/constants'
 
 function OrderForm({
   onOrderSubmit,
@@ -15,11 +24,10 @@ function OrderForm({
   const form = useRef()
 
   function handleSubmit() {
-    // eslint-disable-next-line no-restricted-globals
-    const result = confirm('Отправить форму?')
+    const result = window.confirm('Отправить форму?')
     if (result) {
       onLoading(true)
-      emailjs.sendForm('service_j2akzgt', 'template_stpxspy', form.current, '5mBhizRVj0aYujetT')
+      emailjs.sendForm(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, form.current, EMAILJS_PUBLIC_KEY)
         .then(() => {
           onOrderSubmit()
         })
@@ -38,6 +46,7 @@ function OrderForm({
         initialValues={{
           name: '',
           phone: '',
+          email: '',
         }}
         onSubmit={(values, actions) => {
           handleSubmit()
@@ -67,7 +76,7 @@ function OrderForm({
             {errors.name && touched.name ? (
               <p className="order-form__error-message">{errors.name}</p>
             ) :
-              <div style={{width: '100%', height: '30px'}} />
+              <div className="order-form__padding" />
             }
             <Field
               className={`order-form__field ${errors.phone && touched.phone ? 'order-form__field_error' : ''}`}
@@ -83,7 +92,23 @@ function OrderForm({
             {errors.phone && touched.phone ? (
               <p className="order-form__error-message">{errors.phone}</p>
             ) :
-              <div style={{width: '100%', height: '30px'}} />
+              <div className="order-form__padding" />
+            }
+            <Field
+              className={`order-form__field ${errors.email && touched.email ? 'order-form__field_error' : ''}`}
+              style={inputTextColor ? inputTextColor : {color: '#000000'}}
+              type="email"
+              name="email"
+              placeholder="Ваш email"
+              value={values.email}
+              onChange={handleChange}
+              validate={validateEmail}
+              required
+            />
+            {errors.email && touched.email ? (
+              <p className="order-form__error-message">{errors.email}</p>
+            ) :
+              <div className="order-form__padding" />
             }
             <FormButton
               text={btnText}

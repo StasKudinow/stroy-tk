@@ -1,9 +1,11 @@
+import { Link } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
-import { servecesCardVariants } from '../utils/constants'
+import { servicesCardVariants } from '../utils/constants'
 
-function ServecesCard({
+function ServicesCard({
   card,
   src,
+  path,
   title,
   text,
   onClickCard,
@@ -28,19 +30,22 @@ function ServecesCard({
               initial="hidden"
               animate="visible"
               exit="closed"
-              variants={servecesCardVariants}
+              variants={servicesCardVariants}
               className="services-card__container"
             >
               <h2 className="services-card__title services-card__title_second">{title}</h2>
               <p className="services-card__text">{text}</p>
-              <button className="services-card__button" type="button">
+              <Link className="services-card__button">
                 галерея
                 <div className="services-card__button-arrow" />
-              </button>
-              <button className="services-card__button services-card__button_second" type="button">
+              </Link>
+              <Link
+                to={`service-list/${path}`}
+                className="services-card__button services-card__button_second"
+              >
                 список услуг
                 <div className="services-card__button-arrow services-card__button-arrow_second" />
-              </button>
+              </Link>
               <button className="services-card__close-button" type="button" onClick={onClose} />
             </motion.div>
           :
@@ -53,4 +58,4 @@ function ServecesCard({
   )
 }
 
-export default ServecesCard
+export default ServicesCard

@@ -3,9 +3,19 @@ import { Route, Routes } from 'react-router-dom'
 
 import Main from './Main'
 import About from './About'
+import License from './License'
+import ServiceList from './ServiceList'
 import PopupWithOrderForm from './PopupWithOrderForm'
 import PopupWithThanks from './PopupWithThanks'
 import Preloader from './Preloader'
+
+import {
+  productionList,
+  сonstructionList,
+  laboratoryList,
+  engineeringList,
+  mountingList
+} from '../utils/constants'
 
 function App() {
 
@@ -62,13 +72,27 @@ function App() {
           />
         } />
 
-        <Route path="/about" element={
-          <About />
-        } />
+        <Route path="about" element={<About />} />
 
-        <Route path="/license" element={
-          <About />
-        } />
+        <Route path="license" element={<License />} />
+
+        <Route path="service-list">
+          <Route path="production" element={
+            <ServiceList list={productionList} />
+          } />
+          <Route path="сonstruction" element={
+            <ServiceList list={сonstructionList} />
+          } />
+          <Route path="laboratory" element={
+            <ServiceList list={laboratoryList} />
+          } />
+          <Route path="engineering" element={
+            <ServiceList list={engineeringList} />
+          } />
+          <Route path="mounting" element={
+            <ServiceList list={mountingList} />
+          } />
+        </Route>
       </Routes>
 
       <PopupWithOrderForm

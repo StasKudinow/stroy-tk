@@ -2,9 +2,16 @@
   width: 100%;
   margin: 0;
   padding: 3px 0 8px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 300;
   line-height: normal;
   color: #FF4242;
   z-index: 10;
 }
+
+@media (min-width: 600px) {
+  .order-form__error-message {
+    font-size: 14px;
+  }
+}
+

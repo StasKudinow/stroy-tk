@@ -12,3 +12,11 @@ export function validatePhone(value) {
     return 'Это поле должно быть номером телефона'
   }
 }
+
+export function validateEmail(value) {
+  if (!value) {
+    return 'Заполните, пожалуйста, это поле'
+  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
+    return 'Некорректный Email'
+  }
+}

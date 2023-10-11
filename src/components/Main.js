@@ -7,14 +7,13 @@ import RightPanel from './RightPanel'
 import Header from './Header'
 import Promo from './Promo'
 import Professionals from './Professionals'
-import Serveces from './Serveces'
+import Services from './Services'
 import HowWeWork from './HowWeWork'
 import Partners from './Partners'
 import Footer from './Footer'
 
 function Main({
   showAnimate,
-  onShowAnimate,
   onOpenPopup,
   onClosePopup,
   onOrderSubmit,
@@ -27,10 +26,11 @@ function Main({
   return (
     <main>
       {isTablet &&
-        <div className="logo__wrapper">
-          <Logo
-            onClosePopup={onClosePopup}
-          />
+        <div
+          className="logo__wrapper"
+          onClick={() => onClosePopup()}
+        >
+          <Logo />
         </div>
       }
 
@@ -46,7 +46,6 @@ function Main({
       <Header
         showAnimate={showAnimate}
         onOpenPopup={onOpenPopup}
-        onClosePopup={onClosePopup}
         isTablet={isTablet}
       />
 
@@ -66,8 +65,8 @@ function Main({
         />
       </Element>
 
-      <Element name="serveces">
-        <Serveces />
+      <Element name="services">
+        <Services />
       </Element>
 
       <Element name="how-we-work">

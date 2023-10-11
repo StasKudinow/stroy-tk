@@ -4,7 +4,6 @@
 @import url(./blocks/page/page.css);
 @import url(./blocks/logo/logo.css);
 @import url(./blocks/logo/__wrapper/logo__wrapper.css);
-@import url(./blocks/logo/__image/logo__image.css);
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__container/header__container.css);
 @import url(./blocks/header/__content/header__content.css);
@@ -108,6 +107,7 @@
 @import url(./blocks/order-form/__field/order-form__field.css);
 @import url(./blocks/order-form/__field/_error/order-form__field_error.css);
 @import url(./blocks/order-form/__error-message/order-form__error-message.css);
+@import url(./blocks/order-form/__padding/order-form__padding.css);
 @import url(./blocks/popup/popup.css);
 @import url(./blocks/popup/_opened/popup_opened.css);
 @import url(./blocks/popup/__container/popup__container.css);
@@ -128,3 +128,10 @@
 @import url(./blocks/preloader/preloader.css);
 @import url(./blocks/preloader/__cube1/preloader__cube1.css);
 @import url(./blocks/preloader/__cube2/preloader__cube2.css);
+@import url(./blocks/service-list/service-list.css);
+@import url(./blocks/service-list/__title/service-list__title.css);
+@import url(./blocks/service-list/__price/service-list__price.css);
+@import url(./blocks/service-list/__container/service-list__container.css);
+@import url(./blocks/service-list/__item/service-list__item.css);
+@import url(./blocks/service-list/__button/service-list__button.css);
+@import url(./blocks/service-list/__arrow/service-list__arrow.css);

@@ -1,9 +1,6 @@
 .services-card__button {
   width: 300px;
   margin: 0 0 25px;
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,6 +9,7 @@
   line-height: normal;
   letter-spacing: 0.3rem;
   color: #FFAC30;
+  text-decoration: none;
   text-transform: uppercase;
   transition: all 0.3s ease;
 }

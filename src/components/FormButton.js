@@ -25,7 +25,7 @@ function FormButton({
       onClick={handleClick}
       disabled={disabled}
     >
-      <p style={{ textTransform: 'uppercase'}}>{text}</p>
+      {text}
       <div className={`form-button__arrow ${disabled ? 'form-button__arrow_disabled' : ''}`} />
     </button>
   )

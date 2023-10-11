@@ -1,18 +1,15 @@
-function Logo({ onClosePopup }) {
+import { Link } from 'react-router-dom'
+
+function Logo() {
 
   function handleClick() {
     document.getElementById('promo')?.scrollIntoView()
-    onClosePopup()
   }
 
   return (
-    <button
-      className="logo"
-      onClick={handleClick}
-      type="button"
-    >
-      <div className="logo__image" />
-    </button>
+    <Link to='/' onClick={handleClick}>
+      <div className="logo" />
+    </Link>
   )
 }
 
