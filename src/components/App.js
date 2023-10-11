@@ -8,6 +8,7 @@ import ServiceList from './ServiceList'
 import PopupWithOrderForm from './PopupWithOrderForm'
 import PopupWithThanks from './PopupWithThanks'
 import Preloader from './Preloader'
+import ScrollToTop from '../utils/ScrollToTop'
 
 import {
   productionList,
@@ -60,7 +61,7 @@ function App() {
 
   return (
     <div className="page">
-
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={
           <Main
@@ -71,11 +72,8 @@ function App() {
             onLoading={setIsLoading}
           />
         } />
-
         <Route path="about" element={<About />} />
-
         <Route path="license" element={<License />} />
-
         <Route path="service-list">
           <Route path="production" element={
             <ServiceList list={productionList} />
@@ -94,19 +92,16 @@ function App() {
           } />
         </Route>
       </Routes>
-
       <PopupWithOrderForm
         isOpen={isPopupWithOrderFormOpen}
         onClosePopup={closeAllPopups}
         onOrderSubmit={handleOrderSubmit}
         onLoading={setIsLoading}
       />
-
       <PopupWithThanks
         isOpen={isPopupWithThanksOpen}
         onClosePopup={closeAllPopups}
       />
-
       <Preloader
         isLoading={isLoading}
       />
