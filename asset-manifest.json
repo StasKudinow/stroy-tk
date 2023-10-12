@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/stroy-tk/static/css/main.ac83a936.css",
-    "main.js": "/stroy-tk/static/js/main.39c81d99.js",
+    "main.css": "/stroy-tk/static/css/main.b9ed9f58.css",
+    "main.js": "/stroy-tk/static/js/main.074d4ffc.js",
     "static/js/787.c09628ce.chunk.js": "/stroy-tk/static/js/787.c09628ce.chunk.js",
     "static/media/services-image-5.png": "/stroy-tk/static/media/services-image-5.4aba9c9bd54cbd9ab749.png",
     "static/media/services-image-2.png": "/stroy-tk/static/media/services-image-2.17037c5fa2c9e9d351dd.png",
@@ -13,12 +13,17 @@
     "static/media/how-we-work-background.png": "/stroy-tk/static/media/how-we-work-background.b603add5e2dc5e692ef4.png",
     "static/media/partners-background.png": "/stroy-tk/static/media/partners-background.cbd9bf43d25815d45656.png",
     "static/media/footer-background.png": "/stroy-tk/static/media/footer-background.5a81364214de11c9b9a6.png",
+    "static/media/random-1.jpg": "/stroy-tk/static/media/random-1.31c1347c06f826c99f7b.jpg",
+    "static/media/random-3.jpg": "/stroy-tk/static/media/random-3.58923f53155e1460f93a.jpg",
     "static/media/OpenSans-Light.ttf": "/stroy-tk/static/media/OpenSans-Light.ba19b360bc99b580b45b.ttf",
     "static/media/OpenSans-Light.woff": "/stroy-tk/static/media/OpenSans-Light.ba19b360bc99b580b45b.woff",
     "static/media/OpenSans-Light.woff2": "/stroy-tk/static/media/OpenSans-Light.ba19b360bc99b580b45b.woff2",
     "static/media/OpenSans-SemiBold.ttf": "/stroy-tk/static/media/OpenSans-SemiBold.dcf2e322dbaa037ca821.ttf",
     "static/media/OpenSans-SemiBold.woff": "/stroy-tk/static/media/OpenSans-SemiBold.dcf2e322dbaa037ca821.woff",
     "static/media/OpenSans-SemiBold.woff2": "/stroy-tk/static/media/OpenSans-SemiBold.dcf2e322dbaa037ca821.woff2",
+    "static/media/random-2.jpg": "/stroy-tk/static/media/random-2.5cd3ec52db4dc10b5e07.jpg",
+    "static/media/random-4.jpg": "/stroy-tk/static/media/random-4.edf4a41bd0e075247245.jpg",
+    "static/media/random-5.jpg": "/stroy-tk/static/media/random-5.bf013cef6f9410d6470d.jpg",
     "static/media/footer-tablet.png": "/stroy-tk/static/media/footer-tablet.3bed0e338f0be9f47076.png",
     "static/media/BrunoAce-Regular.ttf": "/stroy-tk/static/media/BrunoAce-Regular.01172788e0754bb642f0.ttf",
     "static/media/BrunoAce-Regular.woff": "/stroy-tk/static/media/BrunoAce-Regular.01172788e0754bb642f0.woff",
@@ -50,12 +55,15 @@
     "static/media/header-burger.svg": "/stroy-tk/static/media/header-burger.ca7a7617227759254717.svg",
     "static/media/arrow.svg": "/stroy-tk/static/media/arrow.2c27f0ece5ebff24a2de.svg",
     "static/media/arrow-gold.svg": "/stroy-tk/static/media/arrow-gold.9822a9e6681aefbbce67.svg",
-    "main.ac83a936.css.map": "/stroy-tk/static/css/main.ac83a936.css.map",
-    "main.39c81d99.js.map": "/stroy-tk/static/js/main.39c81d99.js.map",
+    "static/media/gallery-button-line.svg": "/stroy-tk/static/media/gallery-button-line.c697f03e714417d4109b.svg",
+    "static/media/gallery-button-prev.svg": "/stroy-tk/static/media/gallery-button-prev.408c743cf294001a0e83.svg",
+    "static/media/gallery-button-next.svg": "/stroy-tk/static/media/gallery-button-next.da5e87b3683abc66f822.svg",
+    "main.b9ed9f58.css.map": "/stroy-tk/static/css/main.b9ed9f58.css.map",
+    "main.074d4ffc.js.map": "/stroy-tk/static/js/main.074d4ffc.js.map",
     "787.c09628ce.chunk.js.map": "/stroy-tk/static/js/787.c09628ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac83a936.css",
-    "static/js/main.39c81d99.js"
+    "static/css/main.b9ed9f58.css",
+    "static/js/main.074d4ffc.js"
   ]
 }
