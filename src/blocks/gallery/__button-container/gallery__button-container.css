@@ -1,0 +1,11 @@
+.gallery__button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .gallery__button-container {
+    gap: 20px;
+  }
+}

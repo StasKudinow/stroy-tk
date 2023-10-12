@@ -5,6 +5,7 @@ import Main from './Main'
 import About from './About'
 import License from './License'
 import ServiceList from './ServiceList'
+import Gallery from './Gallery'
 import PopupWithOrderForm from './PopupWithOrderForm'
 import PopupWithThanks from './PopupWithThanks'
 import Preloader from './Preloader'
@@ -91,6 +92,7 @@ function App() {
             <ServiceList list={mountingList} />
           } />
         </Route>
+        <Route path="gallery" element={<Gallery />} />
       </Routes>
       <PopupWithOrderForm
         isOpen={isPopupWithOrderFormOpen}

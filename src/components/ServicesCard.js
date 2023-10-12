@@ -35,7 +35,10 @@ function ServicesCard({
             >
               <h2 className="services-card__title services-card__title_second">{title}</h2>
               <p className="services-card__text">{text}</p>
-              <Link className="services-card__button">
+              <Link
+                to="gallery"
+                className="services-card__button"
+              >
                 галерея
                 <div className="services-card__button-arrow" />
               </Link>

@@ -66,8 +66,7 @@
 @import url(./blocks/work/work.css);
 @import url(./blocks/work/__wrapper/work__wrapper.css);
 @import url(./blocks/work/__title/work__title.css);
-@import url(./blocks/slider/swiper.css);
-@import url(./blocks/slider/__container/slider__container.css);
+@import url(./blocks/slider/slider.css);
 @import url(./blocks/slider/__slide/slider__slide.css);
 @import url(./blocks/slider/__icon/slider__icon.css);
 @import url(./blocks/slider/__text-container/slider__text-container.css);
@@ -135,3 +134,12 @@
 @import url(./blocks/service-list/__item/service-list__item.css);
 @import url(./blocks/service-list/__button/service-list__button.css);
 @import url(./blocks/service-list/__arrow/service-list__arrow.css);
+@import url(./blocks/gallery/gallery.css);
+@import url(./blocks/gallery/__photo/gallery__photo.css);
+@import url(./blocks/gallery/__buttons/gallery__buttons.css);
+@import url(./blocks/gallery/__button-container/gallery__button-container.css);
+@import url(./blocks/gallery/__button-prev/gallery__button-prev.css);
+@import url(./blocks/gallery/__button-next/gallery__button-next.css);
+@import url(./blocks/gallery/__button-line/gallery__button-line.css);
+@import url(./blocks/gallery/__button-back/gallery__button-back.css);
+@import url(./blocks/gallery/__arrow/gallery__arrow.css);

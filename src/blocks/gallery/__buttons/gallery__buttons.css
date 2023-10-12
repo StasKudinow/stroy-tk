@@ -1,0 +1,21 @@
+.gallery__buttons {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 50px;
+  z-index: 10;
+}
+
+@media (min-width: 600px) {
+  .gallery__buttons {
+    width: 500px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery__buttons {
+    width: 700px;
+  }
+}

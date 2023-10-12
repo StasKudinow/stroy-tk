@@ -1,24 +1,29 @@
-.service-list__button {
+.gallery__button-back {
   width: 300px;
-  margin-top: 40px;
   display: flex;
   font-size: 10px;
   font-weight: 400;
   line-height: normal;
   letter-spacing: 0.4rem;
   text-decoration: none;
-  color: #FFAC30;
   text-transform: uppercase;
+  color: #FFFFFF;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  z-index: 10;
   transition: all 0.3s ease;
 }
 
-.service-list__button:hover {
+.gallery__button-back:hover {
   opacity: 0.4;
 }
 
 @media (min-width: 600px) {
-  .service-list__button {
+  .gallery__button-back {
     width: 500px;
     font-size: 20px;
+    top: 40px;
+    left: 40px;
   }
 }

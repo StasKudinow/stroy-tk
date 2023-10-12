@@ -16,7 +16,7 @@ function Slider({ workSlides, partnersSlides }) {
 
   return (
     <Swiper
-      className="slider__container"
+      className="slider"
       modules={[Navigation, Pagination, Autoplay]}
       slidesPerView={1}
       breakpoints={partnersSlides && {

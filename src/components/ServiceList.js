@@ -1,6 +1,8 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function ServiceList({ list }) {
+
+  const navigate = useNavigate()
 
   return (
     <main>
@@ -27,8 +29,11 @@ function ServiceList({ list }) {
                   </li>
                 })}
               </ul>
-              <Link to="/" className="service-list__button">
-                вернуться на главную
+              <Link
+                className="service-list__button"
+                onClick={() => navigate(-1)}
+              >
+                вернуться к услугам
                 <div className="service-list__arrow" />
               </Link>
             </div>

@@ -1,0 +1,18 @@
+.gallery__button-line {
+  width: 80px;
+  height: 2px;
+  background-image: url(../../../images/gallery-button-line.svg);
+  background-size: cover;
+}
+
+@media (min-width: 600px) {
+  .gallery__button-line {
+    width: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery__button-line {
+    width: 220px;
+  }
+}

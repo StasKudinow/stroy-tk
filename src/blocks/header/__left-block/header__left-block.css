@@ -1,8 +1,8 @@
 .header__left-block {
-  padding-left: 10px;
+  padding-left: 20px;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 @media (min-width: 600px) {
