@@ -1,5 +1,5 @@
 .gallery {
-  min-height: 100vh;
+  height: 100vh;
   display: flex !important;
   justify-content: center;
   overflow-y: visible !important;
