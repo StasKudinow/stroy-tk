@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/stroy-tk/static/css/main.056f90b3.css",
+    "main.css": "/stroy-tk/static/css/main.1c36de8b.css",
     "main.js": "/stroy-tk/static/js/main.90738cbe.js",
     "static/js/787.c09628ce.chunk.js": "/stroy-tk/static/js/787.c09628ce.chunk.js",
     "static/media/services-image-5.png": "/stroy-tk/static/media/services-image-5.4aba9c9bd54cbd9ab749.png",
@@ -43,9 +43,9 @@
     "static/media/social-icon-youtube.svg": "/stroy-tk/static/media/social-icon-youtube.9fa773bbb5b94e80ad09.svg",
     "static/media/social-icon-vk.svg": "/stroy-tk/static/media/social-icon-vk.a7c1a217f39f4c0ecf42.svg",
     "static/media/work-icon-6.svg": "/stroy-tk/static/media/work-icon-6.bb1bdd7186345357668e.svg",
+    "index.html": "/stroy-tk/index.html",
     "static/media/work-icon-1.svg": "/stroy-tk/static/media/work-icon-1.499d7f6469d15fefb8aa.svg",
     "static/media/work-icon-5.svg": "/stroy-tk/static/media/work-icon-5.519fc28a119827253091.svg",
-    "index.html": "/stroy-tk/index.html",
     "static/media/social-icon-telegram.svg": "/stroy-tk/static/media/social-icon-telegram.4225d4a49925c80a0a61.svg",
     "static/media/professionals-line.svg": "/stroy-tk/static/media/professionals-line.f739da0f032afd4e2295.svg",
     "static/media/services-line.svg": "/stroy-tk/static/media/services-line.95938a43b22a30b8e23e.svg",
@@ -58,12 +58,12 @@
     "static/media/gallery-button-line.svg": "/stroy-tk/static/media/gallery-button-line.c697f03e714417d4109b.svg",
     "static/media/gallery-button-prev.svg": "/stroy-tk/static/media/gallery-button-prev.408c743cf294001a0e83.svg",
     "static/media/gallery-button-next.svg": "/stroy-tk/static/media/gallery-button-next.da5e87b3683abc66f822.svg",
-    "main.056f90b3.css.map": "/stroy-tk/static/css/main.056f90b3.css.map",
+    "main.1c36de8b.css.map": "/stroy-tk/static/css/main.1c36de8b.css.map",
     "main.90738cbe.js.map": "/stroy-tk/static/js/main.90738cbe.js.map",
     "787.c09628ce.chunk.js.map": "/stroy-tk/static/js/787.c09628ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.056f90b3.css",
+    "static/css/main.1c36de8b.css",
     "static/js/main.90738cbe.js"
   ]
 }
