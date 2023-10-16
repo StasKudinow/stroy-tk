@@ -1,4 +1,5 @@
 .gallery {
+  min-height: 100vh;
   display: flex !important;
   justify-content: center;
   overflow-y: visible !important;
@@ -6,16 +7,20 @@
 
 .gallery .swiper-pagination {
   height: 60px;
-  margin-bottom: 20px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
   display: flex;
   justify-content: center;
+  bottom: 0;
   gap: 20px;
 }
 
 .gallery .swiper-pagination-current {
   color: #FFFFFF;
   font-family: "BrunoAce";
-  font-size: 16px;
+  font-size: 26px;
   font-weight: 400;
   line-height: normal;
   text-align: center;
@@ -25,7 +30,7 @@
 .gallery .swiper-pagination-total {
   color: #FFAC30;
   font-family: "BrunoAce";
-  font-size: 26px;
+  font-size: 16px;
   font-weight: 400;
   line-height: normal;
   text-align: center;
@@ -39,11 +44,11 @@
   }
 
   .gallery .swiper-pagination-current {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   .gallery .swiper-pagination-total {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 
@@ -54,10 +59,10 @@
   }
 
   .gallery .swiper-pagination-current {
-    font-size: 28px;
+    font-size: 38px;
   }
 
   .gallery .swiper-pagination-total {
-    font-size: 38px;
+    font-size: 28px;
   }
 }

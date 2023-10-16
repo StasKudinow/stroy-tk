@@ -990,12 +990,119 @@ export const mountingList = [
   }
 ]
 
-export const galleryPhotos = [
-  {id: 1},
-  {id: 2},
-  {id: 3},
-  {id: 4},
-  {id: 5},
+export const productionPhotos = [
+  {
+    dirname: 'production',
+    id: 1
+  },
+  {
+    dirname: 'production',
+    id: 2
+  },
+  {
+    dirname: 'production',
+    id: 3
+  },
+  {
+    dirname: 'production',
+    id: 4
+  },
+  {
+    dirname: 'production',
+    id: 5
+  },
+]
+
+export const сonstructionPhotos = [
+  {
+    dirname: 'сonstruction',
+    id: 1
+  },
+  {
+    dirname: 'сonstruction',
+    id: 2
+  },
+  {
+    dirname: 'сonstruction',
+    id: 3
+  },
+  {
+    dirname: 'сonstruction',
+    id: 4
+  },
+  {
+    dirname: 'сonstruction',
+    id: 5
+  },
+]
+
+export const laboratoryPhotos = [
+  {
+    dirname: 'laboratory',
+    id: 1
+  },
+  {
+    dirname: 'laboratory',
+    id: 2
+  },
+  {
+    dirname: 'laboratory',
+    id: 3
+  },
+  {
+    dirname: 'laboratory',
+    id: 4
+  },
+  {
+    dirname: 'laboratory',
+    id: 5
+  },
+]
+
+export const engineeringPhotos = [
+  {
+    dirname: 'engineering',
+    id: 1
+  },
+  {
+    dirname: 'engineering',
+    id: 2
+  },
+  {
+    dirname: 'engineering',
+    id: 3
+  },
+  {
+    dirname: 'engineering',
+    id: 4
+  },
+  {
+    dirname: 'engineering',
+    id: 5
+  },
+]
+
+export const mountingPhotos = [
+  {
+    dirname: 'mounting',
+    id: 1
+  },
+  {
+    dirname: 'mounting',
+    id: 2
+  },
+  {
+    dirname: 'mounting',
+    id: 3
+  },
+  {
+    dirname: 'mounting',
+    id: 4
+  },
+  {
+    dirname: 'mounting',
+    id: 5
+  },
 ]
 
 // animations

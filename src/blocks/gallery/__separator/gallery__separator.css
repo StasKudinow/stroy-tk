@@ -1,0 +1,7 @@
+.gallery__separator {
+  width: 150px;
+  height: 2px;
+  background-image: url(../../../images/gallery-button-line.svg);
+  background-size: cover;
+  transform: rotate(35deg);
+}

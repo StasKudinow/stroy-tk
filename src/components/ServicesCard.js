@@ -36,7 +36,7 @@ function ServicesCard({
               <h2 className="services-card__title services-card__title_second">{title}</h2>
               <p className="services-card__text">{text}</p>
               <Link
-                to="gallery"
+                to={`gallery/${path}`}
                 className="services-card__button"
               >
                 галерея

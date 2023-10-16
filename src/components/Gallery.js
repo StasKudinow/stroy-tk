@@ -1,18 +1,23 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper/modules'
-import { galleryPhotos } from '../utils/constants'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-function Gallery() {
+function Gallery({ photos }) {
 
   const navigate = useNavigate()
 
   const pagination = {
     type: 'fraction',
+    formatFractionCurrent: function (number) {
+      return ('0' + number).slice(-2);
+    },
+    formatFractionTotal: function (number) {
+        return ('0' + number).slice(-2);
+    },
     renderFraction: function (currentClass, totalClass) {
       return '<span class="' + currentClass + '"></span>' +
               '<span class="' + totalClass + '"></span>'
@@ -30,12 +35,13 @@ function Gallery() {
       }}
       pagination={pagination}
     >
-      {galleryPhotos.map((photo) => {
+      {photos.map((photo) => {
         return <SwiperSlide key={photo.id}>
           <div
             className="gallery__photo"
             style={{
-              backgroundImage: `url(${require(`../images/test-photo/random-${photo.id}.jpg`)})`
+              backgroundImage:
+                `url(${require(`../images/test-photo/${photo.dirname}/random-${photo.id}.jpg`)})`
             }}
           />
         </SwiperSlide>
@@ -45,6 +51,7 @@ function Gallery() {
           <button className="gallery__button-prev" />
           <div className="gallery__button-line" />
         </div>
+        <div className="gallery__separator" />
         <div className="gallery__button-container">
           <div className="gallery__button-line" />
           <button className="gallery__button-next" />

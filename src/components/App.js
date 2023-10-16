@@ -12,6 +12,14 @@ import Preloader from './Preloader'
 import ScrollToTop from '../utils/ScrollToTop'
 
 import {
+  productionPhotos,
+  сonstructionPhotos,
+  laboratoryPhotos,
+  engineeringPhotos,
+  mountingPhotos
+} from '../utils/constants'
+
+import {
   productionList,
   сonstructionList,
   laboratoryList,
@@ -92,7 +100,23 @@ function App() {
             <ServiceList list={mountingList} />
           } />
         </Route>
-        <Route path="gallery" element={<Gallery />} />
+        <Route path="gallery">
+          <Route path="production" element={
+            <Gallery photos={productionPhotos} />
+          } />
+          <Route path="сonstruction" element={
+            <Gallery photos={сonstructionPhotos} />
+          } />
+          <Route path="laboratory" element={
+            <Gallery photos={laboratoryPhotos} />
+          } />
+          <Route path="engineering" element={
+            <Gallery photos={engineeringPhotos} />
+          } />
+          <Route path="mounting" element={
+            <Gallery photos={mountingPhotos} />
+          } />
+        </Route>
       </Routes>
       <PopupWithOrderForm
         isOpen={isPopupWithOrderFormOpen}
